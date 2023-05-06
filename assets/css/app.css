@@ -1,0 +1,250 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+
+    Theme Name: Template Name bdh Highlights HTML5 Template
+    Author: DeshiSmash
+    Support:
+    Description:
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+/************ TABLE OF CONTENTS ***************
+
+    01. THEME DEFAULT CSS
+    02. HEADER CSS
+
+**********************************************/
+
+/*----------------------------------------*/
+/*  01. THEME DEFAULT CSS START
+/*----------------------------------------*/
+
+/* Montserrat & Outfit Font  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    /**
+        @font family declaration
+    */
+    --bdh-ff-body: 'Outfit', sans-serif;
+    --bdh-ff-heading: 'Outfit', sans-serif;
+    --bdh-ff-p: 'Montserrat', sans-serif;
+    /**
+        @color declaration
+    */
+    --bdh-common-white: #ffffff;
+    --bdh-common-black: #000;
+    --bdh-heading-primary: #000;
+    --bdh-grey-1: #f5f8fb;
+    --bdh-grey-2: #e2ebf4;
+    --bdh-text-body: #888888;
+    --bdh-text-1: #000;
+    --bdh-theme-primary: #0660bdh;
+    --bdh-border-1: #888888;
+    --bdh-border-2: #b7c3cf;
+    /**
+        @font weight declaration
+    */
+    --bdh-fw-normal: normal;
+    --bdh-fw-elight: 200;
+    --bdh-fw-light: 300;
+    --bdh-fw-regular: 400;
+    --bdh-fw-medium: 500;
+    --bdh-fw-sbold: 600;
+    --bdh-fw-bold: 700;
+    --bdh-fw-ebold: 800;
+    --bdh-fw-black: 900;
+    /**
+        @font size declaration
+    */
+    --bdh-fs-body: 14px;
+    --bdh-fs-p: 14px;
+    --bdh-fs-h1: 40px;
+    --bdh-fs-h2: 36px;
+    --bdh-fs-h3: 24px;
+    --bdh-fs-h4: 20px;
+    --bdh-fs-h5: 16px;
+    --bdh-fs-h6: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*---------------------------------
+	typography css start 
+---------------------------------*/
+body {
+    font-family: var(--bdh-ff-body);
+    font-size: var(--bdh-fs-body);
+    font-weight: var(--bdh-fw-normal);
+    color: var(--bdh-text-body);
+    line-height: 26px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--bdh-ff-heading);
+    color: var(--bdh-heading-primary);
+    margin-top: 0px;
+    font-weight: 600;
+    line-height: 1.2;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+h1 {
+    font-size: var(--bdh-fs-h1);
+}
+
+h2 {
+    font-size: var(--bdh-fs-h2);
+}
+
+h3 {
+    font-size: var(--bdh-fs-h3);
+}
+
+h4 {
+    font-size: var(--bdh-fs-h4);
+}
+
+h5 {
+    font-size: var(--bdh-fs-h5);
+}
+
+h6 {
+    font-size: var(--bdh-fs-h6);
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    font-family: var(--bdh-ff-p);
+    font-size: var(--bdh-fs-p);
+    font-weight: var(--bdh-fw-normal);
+    color: var(--bdh-text-body);
+    margin-bottom: 15px;
+    line-height: 26px;
+}
+
+a,
+button,
+p,
+input,
+select,
+textarea,
+li,
+.transition-3,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus,
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+a,
+button {
+    color: inherit;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+input {
+    outline: none;
+}
+
+input[type=color] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    border-radius: 50%;
+}
+
+*::-moz-selection {
+    background: var(--bdh-common-black);
+    color: var(--bdh-common-white);
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: var(--bdh-common-black);
+    color: var(--bdh-common-white);
+    text-shadow: none;
+}
+
+::selection {
+    background: var(--bdh-common-black);
+    color: var(--bdh-common-white);
+    text-shadow: none;
+}
+
+*::-moz-placeholder {
+    color: var(--bdh-common-black);
+    font-size: var(--bdh-fs-body);
+    opacity: 1;
+}
+
+*::placeholder {
+    color: var(--bdh-common-black);
+    font-size: var(--bdh-fs-body);
+    opacity: 1;
+}
