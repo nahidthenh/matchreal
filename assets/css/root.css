@@ -1,0 +1,73 @@
+/* Inter Font  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    /**
+        @font family declaration
+    */
+    --mr-ff-body: 'Inter',
+        sans-serif;
+    /**
+        @color declaration
+    */
+    --mr-white: #fff;
+    --mr-black: #000;
+    --mr-heading-primary: #000;
+    --mr-text: #969598;
+    --mr-theme-primary: #2EA4FC;
+    /**
+        @font weight declaration
+    */
+    --mr-fw-normal: normal;
+    --mr-fw-elight: 200;
+    --mr-fw-light: 300;
+    --mr-fw-regular: 400;
+    --mr-fw-medium: 500;
+    --mr-fw-sbold: 600;
+    --mr-fw-bold: 700;
+    --mr-fw-ebold: 800;
+    --mr-fw-black: 900;
+    /**
+        @font size declaration
+    */
+    --mr-fs-body: 18px;
+    --mr-fs-p: 14px;
+    --mr-fs-h1: 40px;
+    --mr-fs-h2: 36px;
+    --mr-fs-h3: 24px;
+    --mr-fs-h4: 20px;
+    --mr-fs-h5: 16px;
+    --mr-fs-h6: 14px;
+    --mr-fs-18: 18px;
+}
+
+.h-100vh {
+    height: 100vh;
+    padding: 50px 0;
+}
+
+.theme-bg {
+    background-color: var(--mr-theme-primary);
+}
+
+.box-shadow-1 {
+    box-shadow: 0 70px 85px rgb(0, 0, 0, 16%);
+}
+
+.box-shadow-2 {
+    box-shadow: 0 0 99px rgb(0, 0, 0, 10%);
+}
+
+.box-shadow-3 {
+    box-shadow: 0 3px 51px rgb(46, 164, 252, 52%);
+}
+
+.theme-btn-1 {
+    background: var(--mr-theme-primary);
+    width: 250px;
+    height: 78px;
+    border-radius: 50px;
+    font-size: var(--mr-fs-h3);
+    font-weight: var(--mr-fw-medium);
+    color: var(--mr-white);
+}

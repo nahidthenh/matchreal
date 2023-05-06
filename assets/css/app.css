@@ -1,7 +1,8 @@
 @charset "UTF-8";
+
 /*-----------------------------------------------------------------------------------
 
-    Theme Name: Template Name bdh Highlights HTML5 Template
+    Theme Name: Template Name mr Highlights HTML5 Template
     Author: DeshiSmash
     Support:
     Description:
@@ -19,54 +20,8 @@
 /*----------------------------------------*/
 /*  01. THEME DEFAULT CSS START
 /*----------------------------------------*/
-
-/* Montserrat & Outfit Font  */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap');
-
-:root {
-    /**
-        @font family declaration
-    */
-    --bdh-ff-body: 'Outfit', sans-serif;
-    --bdh-ff-heading: 'Outfit', sans-serif;
-    --bdh-ff-p: 'Montserrat', sans-serif;
-    /**
-        @color declaration
-    */
-    --bdh-common-white: #ffffff;
-    --bdh-common-black: #000;
-    --bdh-heading-primary: #000;
-    --bdh-grey-1: #f5f8fb;
-    --bdh-grey-2: #e2ebf4;
-    --bdh-text-body: #888888;
-    --bdh-text-1: #000;
-    --bdh-theme-primary: #0660bdh;
-    --bdh-border-1: #888888;
-    --bdh-border-2: #b7c3cf;
-    /**
-        @font weight declaration
-    */
-    --bdh-fw-normal: normal;
-    --bdh-fw-elight: 200;
-    --bdh-fw-light: 300;
-    --bdh-fw-regular: 400;
-    --bdh-fw-medium: 500;
-    --bdh-fw-sbold: 600;
-    --bdh-fw-bold: 700;
-    --bdh-fw-ebold: 800;
-    --bdh-fw-black: 900;
-    /**
-        @font size declaration
-    */
-    --bdh-fs-body: 14px;
-    --bdh-fs-p: 14px;
-    --bdh-fs-h1: 40px;
-    --bdh-fs-h2: 36px;
-    --bdh-fs-h3: 24px;
-    --bdh-fs-h4: 20px;
-    --bdh-fs-h5: 16px;
-    --bdh-fs-h6: 14px;
-}
+/* Import Root CSS  */
+@import url(./root.css);
 
 * {
     margin: 0;
@@ -78,15 +33,16 @@
 	typography css start 
 ---------------------------------*/
 body {
-    font-family: var(--bdh-ff-body);
-    font-size: var(--bdh-fs-body);
-    font-weight: var(--bdh-fw-normal);
-    color: var(--bdh-text-body);
+    font-family: var(--mr-ff-body);
+    font-size: var(--mr-fs-body);
+    font-weight: var(--mr-fw-normal);
+    color: var(--mr-text);
     line-height: 26px;
 }
 
 a {
     text-decoration: none;
+
 }
 
 h1,
@@ -95,8 +51,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--bdh-ff-heading);
-    color: var(--bdh-heading-primary);
+    color: var(--mr-heading-primary);
     margin-top: 0px;
     font-weight: 600;
     line-height: 1.2;
@@ -108,27 +63,27 @@ h6 {
 }
 
 h1 {
-    font-size: var(--bdh-fs-h1);
+    font-size: var(--mr-fs-h1);
 }
 
 h2 {
-    font-size: var(--bdh-fs-h2);
+    font-size: var(--mr-fs-h2);
 }
 
 h3 {
-    font-size: var(--bdh-fs-h3);
+    font-size: var(--mr-fs-h3);
 }
 
 h4 {
-    font-size: var(--bdh-fs-h4);
+    font-size: var(--mr-fs-h4);
 }
 
 h5 {
-    font-size: var(--bdh-fs-h5);
+    font-size: var(--mr-fs-h5);
 }
 
 h6 {
-    font-size: var(--bdh-fs-h6);
+    font-size: var(--mr-fs-h6);
 }
 
 ul {
@@ -137,11 +92,10 @@ ul {
 }
 
 p {
-    font-family: var(--bdh-ff-p);
-    font-size: var(--bdh-fs-p);
-    font-weight: var(--bdh-fw-normal);
-    color: var(--bdh-text-body);
-    margin-bottom: 15px;
+    font-family: var(--mr-ff-p);
+    font-size: var(--mr-fs-body);
+    font-weight: var(--mr-fw-normal);
+    color: var(--mr-text-body);
     line-height: 26px;
 }
 
@@ -219,32 +173,46 @@ input[type=color] {
     border-radius: 50%;
 }
 
-*::-moz-selection {
-    background: var(--bdh-common-black);
-    color: var(--bdh-common-white);
-    text-shadow: none;
+/* Login CSS  */
+
+
+.auth-wrap h1 {
+    margin-bottom: 72px;
+    font-weight: var(--mr-fw-bold);
 }
 
-::-moz-selection {
-    background: var(--bdh-common-black);
-    color: var(--bdh-common-white);
-    text-shadow: none;
+.auth-input {
+    height: 74px;
+    border-radius: 50px;
+    padding: 0 70px;
+    margin-bottom: 20px;
+    font-size: 22px;
 }
 
-::selection {
-    background: var(--bdh-common-black);
-    color: var(--bdh-common-white);
-    text-shadow: none;
+.auth-input:focus {
+    box-shadow: none !important;
 }
 
-*::-moz-placeholder {
-    color: var(--bdh-common-black);
-    font-size: var(--bdh-fs-body);
-    opacity: 1;
+
+
+.form-check.text-start.rememberMe label {
+    color: var(--mr-theme-primary);
 }
 
-*::placeholder {
-    color: var(--bdh-common-black);
-    font-size: var(--bdh-fs-body);
-    opacity: 1;
+.form-check.text-start.rememberMe input {
+    border: var(--mr-theme-primary);
+    background-color: var(--mr-theme-primary) !important;
+    height: 15px;
+    width: 15px;
+    margin-top: 6px !important;
+    margin-right: 10px;
+}
+
+.form-check.text-start.rememberMe input:focus {
+    box-shadow: none !important;
+}
+
+.auth-icon {
+    top: 20px;
+    left: 30px;
 }
