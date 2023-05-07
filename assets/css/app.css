@@ -715,6 +715,14 @@ input[type="radio"]:checked+.label.woman {
     display: block;
 }
 
+.sign-out-btn {
+    background: red;
+    color: #fff;
+    border: 0;
+    padding: 10px 40px;
+    font-weight: bold;
+}
+
 /* Dashboard Style Start  */
 .db-user-dp {
     height: 500px;
