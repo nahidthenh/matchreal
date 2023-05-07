@@ -126,6 +126,10 @@
     margin-bottom: 300px !important;
 }
 
+.h-600px {
+    height: 600px !important;
+}
+
 /* Background color  */
 .bg-gold {
     background-color: #FCC52E !important;
