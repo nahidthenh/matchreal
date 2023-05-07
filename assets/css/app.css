@@ -811,6 +811,11 @@ input[type="radio"]:checked+.label.woman {
     .single-user-header {
         width: 100%;
     }
+
+    .single-user-action-btn {
+        width: 98px;
+        height: 40px;
+    }
 }
 
 
@@ -859,4 +864,3 @@ input[type="radio"]:checked+.label.woman {
     display: flex !important;
     transition: .3s;
 }
-
