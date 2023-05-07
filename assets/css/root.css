@@ -10,6 +10,8 @@
     /**
         @color declaration
     */
+    --mr-main-bg: #EEF2FB;
+    --mr-active: #EDF4F6;
     --mr-white: #fff;
     --mr-black: #000;
     --mr-heading-primary: #000;
@@ -61,6 +63,11 @@
 .box-shadow-3 {
     box-shadow: 0 3px 51px rgb(46, 164, 252, 52%);
 }
+
+.box-shadow-4 {
+    box-shadow: 3px 0 64px rgb(0, 0, 0, 8%);
+}
+
 
 .theme-btn-1 {
     background: var(--mr-theme-primary);
