@@ -10,6 +10,8 @@
     /**
         @color declaration
     */
+    --mr-pink: #F2599F;
+    --mr-blue: #2EA4FC;
     --mr-main-bg: #EEF2FB;
     --mr-heading: #010101;
     --mr-active: #EDF4F6;
@@ -120,7 +122,19 @@
     margin-top: 6rem;
 }
 
+.margin-bottom-300 {
+    margin-bottom: 300px !important;
+}
+
 /* Background color  */
 .bg-gold {
     background-color: #FCC52E !important;
+}
+
+.bg-pink {
+    background-color: var(--mr-pink);
+}
+
+.bg-blue {
+    background-color: var(--mr-blue);
 }
