@@ -106,3 +106,7 @@
         transform: rotate(360deg);
     }
 }
+
+.mt-6 {
+    margin-top: 6rem;
+}

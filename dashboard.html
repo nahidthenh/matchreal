@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover, user-scalable=no">
+    <title>Welcome To Matchreal</title>
+
+    <!-- ==== css ==== -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+    <!-- Prelaoder  -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+    <!-- Prelaoder  -->
+    <!-- Header  -->
+    <header class="main-header mb-3 bg-white py-3 fixed-top">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-2">
+                    <div class="header-logo d-flex align-items-center">
+                        <img src="assets/images/logo.svg" alt="">
+                        <!--  <input type="search" placeholder="Search" name="" class="form-control ms-3 rounded-5" id=""> -->
+                    </div>
+                </div>
+                <div class="col-md-7 mx-auto">
+                    <div class="header-main-menu-wrap">
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="help.html">Help</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="claim.html">Claim</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="header-menu-right  text-end float-end">
+                        <div class="d-flex align-items-center">
+                            <div id="notification-toggle" class="header-notifaction">
+                                <img src="assets/images/icon/notification.svg" alt="" width="25" height="25">
+
+                                <div style="display: none;" id="notificationToggleItem" class="notification-dropdown">
+                                    <h4 class="dropdown-item-title">Notification</h4>
+                                    <h6 class="notification-sub-title">New</h6>
+                                    <div class="notification-item d-flex justify-content-between align-items-center">
+                                        <div style="background-image: url(assets/images/user/1.png);"
+                                            class="notification-user-dp">
+
+                                        </div>
+                                        <div>
+                                            <a href="/activity.html">
+                                                <p class="m-0 p-0">
+                                                    Lorem ipsum dolor sit amet consectetur, adipisicing...
+                                                </p>
+                                                <span class="notiTime">
+                                                    20h age
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h6 class="notification-sub-title pt-2">Earlier</h6>
+                                    <div class="notification-item d-flex justify-content-between align-items-center">
+                                        <div style="background-image: url(assets/images/user/5.png);"
+                                            class="notification-user-dp">
+
+                                        </div>
+                                        <div>
+                                            <p class="m-0 p-0">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing...
+                                            </p>
+                                            <span class="notiTime">
+                                                2h age
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="notification-item d-flex justify-content-between align-items-center">
+                                        <div style="background-image: url(assets/images/user/4.png);"
+                                            class="notification-user-dp">
+
+                                        </div>
+                                        <div>
+                                            <p class="m-0 p-0">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing...
+                                            </p>
+                                            <span class="notiTime">
+                                                2h age
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="notification-item d-flex justify-content-between align-items-center">
+                                        <div style="background-image: url(assets/images/user/5.png);"
+                                            class="notification-user-dp">
+
+                                        </div>
+                                        <div>
+                                            <p class="m-0 p-0">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing...
+                                            </p>
+                                            <span class="notiTime">
+                                                2h age
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="profile-toggle" class="user-dp">
+                                <img class="rounded-circle" src="assets/images/user/1.png" alt="" width="50"
+                                    height="50">
+
+                                <div style="display: none;" id="profileToggleItem" class="profile-dropdown">
+                                    <div class="dropdown-profile-header">
+                                        <h3 class="m-0 p-0">Hello <span>Rasel Ahmed.</span></h3>
+                                        <p class="m-0 p-0">Available</p>
+                                    </div>
+                                    <div class="dropdown-profile-body">
+                                        <a href="edit-profile.html" class="dropdown-profile-menu">
+                                            <span><i class="ri-edit-box-line"></i></span> Edit Profile
+                                        </a>
+                                        <a href="introduce.html" class="dropdown-profile-menu">
+                                            <span><i class="ri-focus-line"></i></span> Introduce Yourself
+                                        </a>
+                                        <a href="your-preference.html" class="dropdown-profile-menu">
+                                            <span><i class="ri-profile-line"></i></span> Your Preference
+                                        </a>
+                                        <a href="privacy-settings.html" class="dropdown-profile-menu">
+                                            <span><i class="ri-git-repository-private-line"></i></span> Privacy
+                                            Settings
+                                        </a>
+                                        <div class="sign-out text-center my-5">
+                                            <button class="sign-out-btn btn btn-outline-danger">Sign Out</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid mt-6">
+        <div class="row">
+            <!-- Sidebar  -->
+            <div class="col-md-2">
+                <div class="col-md-2">
+                    <div class="left-sidebar ">
+                        <div class="sidebar-menu-wrap">
+                            <a href="dashboard.html">
+                                <ul>
+                                    <li class="active">
+                                        <img src="assets/images/sidebar-menu/dashboard.svg" alt="home" width="24"
+                                            height="24">
+                                        <span>Dashboard</span>
+                                    </li>
+                                </ul>
+                            </a>
+
+                            <a href="todays-match.html">
+                                <ul>
+                                    <li>
+                                        <img src="assets/images/sidebar-menu/todays-match.svg" alt="home" width="24"
+                                            height="24">
+                                        <span>Todays Match</span>
+                                    </li>
+                                </ul>
+                            </a>
+
+                            <a href="my-match.html">
+                                <ul class="position-relative">
+                                    <li>
+                                        <span class="badge rounded-pill sidebar-state">10</span>
+                                        <img src="assets/images/sidebar-menu/my-match.svg" alt="home" width="24"
+                                            height="24">
+                                        <span>My matches</span>
+                                    </li>
+                                </ul>
+                            </a>
+
+                            <a href="activity.html">
+                                <ul>
+                                    <li>
+                                        <img src="assets/images/sidebar-menu/activity.svg" alt="home" width="24"
+                                            height="24">
+                                        <span>Activity</span>
+                                    </li>
+                                </ul>
+                            </a>
+
+                            <a href="message.html">
+                                <ul>
+                                    <li>
+                                        <img src="assets/images/sidebar-menu/message.svg" alt="home" width="24"
+                                            height="24">
+                                        <span>Message</span>
+                                    </li>
+                                </ul>
+                            </a>
+
+                            <a href="search.html">
+                                <ul>
+                                    <li>
+                                        <img src="assets/images/sidebar-menu/search.svg" alt="home" width="24"
+                                            height="24">
+                                        <span>Search</span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Center Bar  -->
+            <div class="col-md-7 mx-auto">
+                <div>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis deserunt reiciendis repudiandae
+                        rerum quidem aspernatur nesciunt consequuntur saepe nobis magnam dolores fuga vel iusto harum
+                        voluptas sed culpa repellat libero debitis doloribus doloremque vero, commodi ex numquam. Quam
+                        inventore, provident facilis totam, sint velit vel saepe libero soluta odit exercitationem quo
+                        magni fuga laudantium excepturi laborum. Corporis voluptatem voluptates corrupti doloribus
+                        tempora, ipsum repellat temporibus delectus natus inventore voluptatibus reprehenderit, fugiat
+                        quaerat voluptate expedita sunt doloremque esse mollitia non! Soluta vitae, nostrum placeat quos
+                        earum veritatis, blanditiis praesentium eius similique adipisci ad. Nobis minus voluptatem nisi
+                        vitae corporis, nesciunt temporibus dolorem asperiores ea blanditiis sit natus officia,
+                        voluptates quod quasi eius ex numquam dolores aut quis quidem? Saepe, nulla. Fugiat vitae optio
+                        quas, possimus ullam harum obcaecati quasi voluptate aperiam ex delectus sapiente! Alias,
+                        corrupti dolorem. Neque aliquid est nam doloremque, laudantium labore, placeat voluptate nulla
+                        itaque animi at. Enim laborum eum aut eius, quos vel atque fuga dolor libero voluptatum quam
+                        eveniet, a unde officia fugiat rerum amet commodi impedit repellat dicta laudantium est magni
+                        exercitationem. Vel, illum ut officia error obcaecati iusto assumenda nesciunt magnam aut
+                        adipisci tempora ab voluptate quia exercitationem rerum excepturi tempore? Itaque quaerat
+                        temporibus tenetur ipsam ut nihil dolores nulla perferendis veniam dolore inventore fugit ullam,
+                        vitae quasi iure aperiam? Tempore expedita rerum odit nisi distinctio assumenda asperiores, et
+                        dolore. Impedit dolorem vel minima unde, voluptatem non autem dolores nostrum numquam provident
+                        quis saepe vitae reprehenderit soluta voluptatibus magnam veniam doloremque ipsam deleniti.
+                        Ipsum facere voluptate et earum, illum consequatur maiores nostrum veritatis repudiandae ullam?
+                        Porro ducimus ex deserunt, dicta amet nisi tempore earum consequatur optio? Dicta veniam, beatae
+                        id atque blanditiis placeat necessitatibus ab odio eligendi, officia reiciendis delectus maxime
+                        repellat laborum. Est tempora quam placeat doloribus! Id nobis repellendus maxime commodi
+                        obcaecati error expedita, temporibus quas hic eaque nesciunt! Accusamus adipisci, tempora quidem
+                        officiis necessitatibus quaerat ex rerum commodi praesentium aspernatur. Culpa quam sed eveniet
+                        mollitia aut ut sint deserunt voluptate deleniti molestias eaque itaque incidunt nostrum
+                        asperiores repellat quis impedit consectetur doloribus distinctio, obcaecati vero rerum
+                        necessitatibus voluptates. Facilis amet, vero assumenda magnam illo, consectetur, dolor optio
+                        totam nobis odio porro sequi voluptatem asperiores! Dicta vero natus dolorem quam doloremque
+                        ipsam. Aut quam blanditiis neque quod, iure, voluptatem doloribus odit velit voluptatum autem
+                        quis incidunt placeat! Illo vel ea dicta maxime sint eaque asperiores. Cupiditate architecto
+                        molestiae iste optio recusandae, laboriosam vel voluptatem assumenda commodi obcaecati nisi
+                        earum temporibus repudiandae dolores ut voluptatum consectetur, quaerat eveniet rem natus
+                        mollitia. Labore accusantium repellendus adipisci officiis velit sed ipsa similique vero ut
+                        dignissimos hic maxime, molestiae incidunt nam possimus! Sapiente quam odit a et, illo autem
+                        neque exercitationem pariatur mollitia illum minus beatae voluptates, dolorem distinctio
+                        laborum, at nobis molestias eius sunt! Aut, corrupti in tenetur nihil earum explicabo dolorem
+                        praesentium, itaque fugit a at ducimus minima molestiae, porro nostrum aliquam voluptatibus.
+                        Voluptates velit eius animi accusamus dolore aliquam delectus quae aperiam! Doloribus optio quia
+                        libero ratione earum beatae praesentium veritatis quod quasi!
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim corporis rem modi mollitia
+                        aspernatur adipisci velit amet sit harum quibusdam perspiciatis ipsum, voluptates ea similique,
+                        laudantium veniam quam necessitatibus reprehenderit, quia eius. Sit, officia ex. Maxime
+                        necessitatibus iusto sapiente quis dolorem laborum, sequi voluptatibus tempora laudantium
+                        commodi quam. Iusto, dolorem blanditiis perspiciatis beatae non earum eveniet laborum tempore!
+                        Error cupiditate in facilis amet nam. Cum aperiam facilis ex hic aspernatur enim fugit a
+                        inventore labore, pariatur doloribus, quisquam officiis repellat. Corporis sunt assumenda iste.
+                        Vel laboriosam laudantium libero harum doloribus, fuga doloremque consectetur quas ab
+                        reprehenderit corrupti distinctio nemo ipsam iste perferendis explicabo dicta nam molestias
+                        magnam iusto asperiores quo eos. Perspiciatis consectetur laboriosam possimus ut ea, debitis
+                        labore enim quia exercitationem eveniet, minima ipsa. Veniam unde quaerat consequuntur eveniet,
+                        neque quae velit alias in ducimus minus necessitatibus asperiores quos nesciunt vitae eaque non
+                        ipsa voluptatibus maiores veritatis, quod animi dolore inventore. Porro aspernatur quis deserunt
+                        est, commodi quae at quam autem soluta perspiciatis quas mollitia voluptatibus officiis
+                        voluptatem. Incidunt consequatur culpa voluptate repellat reprehenderit impedit! Quos sint enim
+                        ipsum culpa totam tempore labore! Quaerat itaque cupiditate fuga, nesciunt recusandae similique
+                        placeat earum! Odio soluta ea quaerat quasi iusto nostrum nam excepturi assumenda mollitia ipsam
+                        tempore ipsa, doloribus libero nisi, sapiente autem ut dolores voluptatem nesciunt dicta tempora
+                        vel! Molestiae deserunt accusantium a, voluptate recusandae dignissimos quisquam officia
+                        incidunt quis soluta sunt voluptates quae modi excepturi est alias voluptas, ut animi aliquam
+                        placeat quam asperiores dolorem explicabo beatae? Ab, error ducimus? Dolore, sint quaerat
+                        nesciunt soluta aspernatur incidunt harum similique vero sapiente dicta accusantium qui
+                        exercitationem neque, repellat amet illum, totam dignissimos. Ratione sed sequi deleniti,
+                        praesentium impedit nostrum dolorum eius tenetur ipsum reprehenderit ut asperiores vel corporis
+                        facilis. Cum, accusantium, doloribus assumenda harum corporis rem similique ex eligendi
+                        cupiditate tempora quisquam placeat velit dignissimos facere eaque ea odit rerum a, odio
+                        tempore. Commodi temporibus molestias omnis maxime corporis nulla voluptatem exercitationem.
+                        Tempora enim veniam provident, praesentium, rerum dolor ab dolore modi laudantium possimus hic
+                        est perferendis temporibus illo maxime! Aspernatur dolores nisi consequatur ea sed, voluptatibus
+                        minus dolorem qui corrupti facilis officiis quo eum voluptate ipsam vitae distinctio at itaque
+                        consequuntur possimus harum. Aut magni, voluptates magnam cupiditate impedit eveniet,
+                        exercitationem veritatis molestias perspiciatis sunt nam nemo itaque! Saepe ducimus quia velit
+                        earum recusandae eum mollitia officia, cum veritatis id nihil, a perspiciatis similique iure
+                        inventore hic labore sit!
+                    </p>
+                </div>
+            </div>
+            <!-- Right bar  -->
+            <div class="col-md-2">
+                <div class="right-sidebar">
+                    <div class="widget-card me-3">
+                        <div class="nh p-3">
+                            <h5>ads title</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quas dolore.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="widget-card me-3">
+                        <img class="img-fluid rounded-2" src="assets/images/ads/ads.png" alt="">
+                    </div>
+                    <div class="widget-card me-3">
+                        <div class="nh p-3">
+                            <h5>Free !!!</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quas dolore.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="widget-card me-3">
+                        <img class="img-fluid rounded-2" src="assets/images/ads/ads2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==== Script File ==== -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
