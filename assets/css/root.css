@@ -11,7 +11,9 @@
         @color declaration
     */
     --mr-main-bg: #EEF2FB;
+    --mr-heading: #010101;
     --mr-active: #EDF4F6;
+    --mr-active-1: #F6F9FA;
     --mr-white: #fff;
     --mr-black: #000;
     --mr-heading-primary: #000;
@@ -116,4 +118,9 @@
 
 .mt-6 {
     margin-top: 6rem;
+}
+
+/* Background color  */
+.bg-gold {
+    background-color: #FCC52E !important;
 }

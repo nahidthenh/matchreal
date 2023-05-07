@@ -52,7 +52,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--mr-heading-primary);
+    color: var(--mr-heading);
     margin-top: 0px;
     font-weight: 600;
     line-height: 1.2;
@@ -96,7 +96,7 @@ p {
     font-family: var(--mr-ff-p);
     font-size: var(--mr-fs-body);
     font-weight: var(--mr-fw-normal);
-    color: var(--mr-text-body);
+    color: var(--mr-text);
     line-height: 26px;
 }
 
@@ -528,7 +528,7 @@ input[type="radio"]:checked+.label.woman {
     bottom: 0;
 }
 
-.theme-btn-1 {
+/* .theme-btn-1 {
     background: transparent;
     border: 2px solid var(--mr-male);
     border-radius: 6px;
@@ -549,7 +549,7 @@ input[type="radio"]:checked+.label.woman {
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
     transition: .4s;
-}
+} */
 
 /* Header  */
 .form-control:focus {
@@ -713,4 +713,50 @@ input[type="radio"]:checked+.label.woman {
 .sidebarMenuFixed {
     margin-top: -15px !important;
     display: block;
+}
+
+/* Dashboard Style Start  */
+.db-user-dp {
+    height: 500px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: top;
+}
+
+.db-user-details-wrap {
+    background-color: var(--mr-active);
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+}
+
+.db-user-bio p {
+    font-size: var(--mr-fs-h5);
+    font-weight: var(--mr-fw-regular);
+}
+
+.theme-btn-3 {
+    background: transparent;
+    border: 1px solid var(--mr-theme-primary);
+    padding: 10px;
+    width: 170px;
+    margin-right: 10px;
+    border-radius: 50px;
+    color: var(--mr-theme-primary);
+    font-size: var(--mr-fs-h5);
+    font-weight: var(--mr-fw-regular);
+}
+
+.theme-btn-3:hover {
+    background-color: var(--mr-theme-primary);
+    color: var(--mr-white);
+    box-shadow: 0 3px 51px rgb(46, 164, 252, 52%);
+}
+
+.update-btn {
+    border-color: gold;
+}
+
+.update-btn:hover {
+    box-shadow: 0 3px 51px rgb(252, 197, 46, 52%) !important;
 }
