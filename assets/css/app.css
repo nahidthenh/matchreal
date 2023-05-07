@@ -61,6 +61,8 @@ h6 {
     -ms-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -767,4 +769,69 @@ input[type="radio"]:checked+.label.woman {
 
 .update-btn:hover {
     box-shadow: 0 3px 51px rgb(252, 197, 46, 52%) !important;
+}
+
+.view-more-btn {
+    background: var(--mr-theme-primary);
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: var(--mr-white) !important;
+    text-transform: capitalize;
+    font-weight: var(--mr-fw-medium);
+}
+
+.view-more-btn:hover {
+    box-shadow: 0 3px 51px rgb(46, 164, 252, 52%);
+}
+
+/* Single User Card  */
+.single-user-card-wrap {
+    background-color: var(--mr-white);
+    margin: 10px;
+    padding: 0 !important;
+    border-radius: 50px;
+}
+
+.card-user-dp {
+    height: 247px;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+}
+
+.single-user-header {
+    display: flex;
+    width: 100%;
+    border-radius: 70px;
+}
+
+@media screen and (max-width: 1440px) {
+    .single-user-header {
+        width: 100%;
+    }
+}
+
+
+.single-user-header>div:first-child {
+    border-top-left-radius: 50px;
+}
+
+.single-user-header>div:last-child {
+    border-top-right-radius: 50px;
+}
+
+.single-user-profile {
+    width: 124px;
+    height: 124px;
+    border-radius: 100px;
+    border: 2px solid var(--mr-white);
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.single-user-body {
+    margin-top: -70px;
+    z-index: 1;
+    position: relative;
 }
