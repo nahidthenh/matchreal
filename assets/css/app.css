@@ -1207,3 +1207,17 @@ div[age_range_slider]>input[type=range]::-ms-tooltip {
 .form-switch input:checked~.form-check-label {
     color: var(--mr-blue);
 }
+
+/* Search Result  */
+.search-result-item p {
+    padding-bottom: 30px;
+}
+
+.search-result-item .single-user-action {
+    padding-bottom: 30px;
+    margin-top: -30px;
+}
+
+.search-result-item {
+    height: 500px;
+}
