@@ -32,8 +32,8 @@
                 </div>
                 <div class="col-md-7 mx-auto">
                     <div class="header-main-menu-wrap justify-content-center d-flex header-search position-relative">
-                        <input type="search" placeholder="Search" name="" class="form-control ms-3 rounded-5 w-50"
-                            id="">
+                        <input type="search" placeholder="Search" name="" class="form-control ms-3 rounded-5 w-50" id=""
+                            data-bs-toggle="modal" data-bs-target="#searchModal">
                     </div>
                 </div>
                 <div class="col-md-2">
@@ -469,7 +469,244 @@
             </div>
         </div>
     </div>
+    <!-- Search Modal  -->
+    <div class="modal fade " id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content modal-bg">
+                <div class="search-modal-header p-5">
+                    <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+                        <div class="nh">
+                            <button class="search-tab-btn active" id="pills-basicSearch-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-basicSearch" type="button" role="tab"
+                                aria-controls="pills-basicSearch" aria-selected="true">Basic</button>
+                            <button class="search-tab-btn" id="pills-advanceSearch-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-advanceSearch" type="button" role="tab"
+                                aria-controls="pills-advanceSearch" aria-selected="false">Advance</button>
+                        </div>
+                    </ul>
+                </div>
+                <div class="search-modal-body">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-basicSearch" role="tabpanel"
+                            aria-labelledby="pills-basicSearch-tab" tabindex="0">
 
+                            <div class="search-item-wrap mx-5 pb-5">
+                                <div class="p-3 bg-white rounded-3 age-rangerSlider-wrap">
+                                    <h3>Age Range (Y)</h3>
+                                    <div age_range_slider="" id="slider-distance">
+                                        <div>
+                                            <div inverse-left="" style="width: 5%;"></div>
+                                            <div inverse-right="" style="width: 50%;"></div>
+                                            <div range="" style="left: 5%; right: 50%;"></div>
+                                            <span thumb="" style="left: 5%;"></span>
+                                            <span thumb="" style="left: 50%;"></span>
+                                            <div sign="" style="left: 5%;">
+                                                <span id="value">5</span>
+                                            </div>
+                                            <div sign="" style="left: 50%;">
+                                                <span id="value">50</span>
+                                            </div>
+                                        </div>
+                                        <input type="range" name="min_age" tabindex="0" value="0" max="100" min="0"
+                                            step="1" id="ageMini" oninput="ageMiniCal()">
+
+                                        <input type="range" name="max_age" tabindex="0" value="50" max="100" min="0"
+                                            step="1" id="ageMax" oninput="ageMaxCal()">
+                                    </div>
+                                </div>
+
+                                <div class="search-innerItemDropdown-wrap">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Marital status</option>
+                                        <option value="1">Married</option>
+                                        <option value="2">Never Married</option>
+                                    </select>
+                                </div>
+
+                                <div class="search-innerItemDropdown-wrap">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Religion</option>
+                                        <option value="1">Married</option>
+                                        <option value="2">Never Married</option>
+                                    </select>
+                                </div>
+
+                                <div class="search-innerItemDropdown-wrap">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Religion</option>
+                                        <option value="1">Married</option>
+                                        <option value="2">Never Married</option>
+                                    </select>
+                                </div>
+                                <div class="text-center">
+                                    <button class="show-result-btn">Show Result</button>
+                                    <!-- <a href=""></a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-advanceSearch" role="tabpanel"
+                            aria-labelledby="pills-advanceSearch-tab" tabindex="0">
+                            <div class="search-item-wrap mx-5 pb-5">
+                                <div class="p-3 bg-white rounded-3 age-rangerSlider-wrap">
+                                    <h3>Age Range (Y)</h3>
+                                    <div age_range_slider="" id="slider-distance">
+                                        <div>
+                                            <div inverse-left="" style="width: 5%;"></div>
+                                            <div inverse-right="" style="width: 50%;"></div>
+                                            <div range="" style="left: 5%; right: 50%;"></div>
+                                            <span thumb="" style="left: 5%;"></span>
+                                            <span thumb="" style="left: 50%;"></span>
+                                            <div sign="" style="left: 5%;">
+                                                <span id="value">5</span>
+                                            </div>
+                                            <div sign="" style="left: 50%;">
+                                                <span id="value">50</span>
+                                            </div>
+                                        </div>
+                                        <input type="range" name="min_age" tabindex="0" value="0" max="100" min="0"
+                                            step="1" id="ageMini" oninput="ageMiniCal()">
+
+                                        <input type="range" name="max_age" tabindex="0" value="50" max="100" min="0"
+                                            step="1" id="ageMax" oninput="ageMaxCal()">
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col">
+                                        <div class="search-innerItemDropdown-wrap w-100 m-0 my-3">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Marital status</option>
+                                                <option value="1">Married</option>
+                                                <option value="2">Never Married</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="search-innerItemDropdown-wrap w-100 m-0 my-3">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Religion</option>
+                                                <option value="1">Married</option>
+                                                <option value="2">Never Married</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="search-innerItemDropdown-wrap w-100 m-0 my-3">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Religion</option>
+                                                <option value="1">Married</option>
+                                                <option value="2">Never Married</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="search-innerItemDropdown-wrap w-100 m-0 my-3">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Religion</option>
+                                                <option value="1">Married</option>
+                                                <option value="2">Never Married</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-3">
+                                    <div class="col">
+                                        <div class="widget-card p-3 bg-white ">
+                                            <h4 class="text-center">
+                                                Education
+                                            </h4>
+                                            <div class="search-select-wrap">
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label"
+                                                        for="flexSwitchCheckDefault">Doctorate</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="flexSwitchCheckChecked">
+                                                    <label class="form-check-label"
+                                                        for="flexSwitchCheckChecked">Master</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="flexSwitchCheckChecked">
+                                                    <label class="form-check-label"
+                                                        for="flexSwitchCheckChecked">Honours</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="flexSwitchCheckChecked">
+                                                    <label class="form-check-label"
+                                                        for="flexSwitchCheckChecked">Bachelors</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="flexSwitchCheckChecked">
+                                                    <label class="form-check-label"
+                                                        for="flexSwitchCheckChecked">Degree</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="widget-card p-3 bg-white ">
+                                            <h4 class="text-center">
+                                                Education
+                                            </h4>
+                                            <div class="search-select-wrap">
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label"
+                                                        for="flexSwitchCheckDefault">Doctorate</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="flexSwitchCheckChecked">
+                                                    <label class="form-check-label"
+                                                        for="flexSwitchCheckChecked">Master</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="flexSwitchCheckChecked">
+                                                    <label class="form-check-label"
+                                                        for="flexSwitchCheckChecked">Honours</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="flexSwitchCheckChecked">
+                                                    <label class="form-check-label"
+                                                        for="flexSwitchCheckChecked">Bachelors</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="flexSwitchCheckChecked">
+                                                    <label class="form-check-label"
+                                                        for="flexSwitchCheckChecked">Degree</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <button class="show-result-btn">Show Result</button>
+                                    <!-- <a href=""></a> -->
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Cancle BTN  -->
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+            </div>
+        </div>
+    </div>
     <!-- ==== Script File ==== -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -489,6 +726,53 @@
                     </button>`
             });
         });
+    </script>
+    <script>
+        $(function () {
+            $("#ageMini").val(13);
+            $("#ageMax").val(50);
+            ageMiniCal();
+            ageMaxCal();
+
+            $(".selectMe2").each(function () {
+                $(this).select2({
+                    width: '100%',
+                    placeholder: $(this).data('place_holder')
+                });
+            });
+        });
+
+        function ageMiniCal() {
+            $this = document.getElementById("ageMini");
+
+            $this.value = Math.min($this.value, $this.parentNode.childNodes[5].value - 1);
+
+            var value = (100 / (parseInt($this.max) - parseInt($this.min))) * parseInt($this.value) - (100 / (
+                parseInt($this.max) - parseInt($this.min))) * parseInt($this.min);
+
+            var children = $this.parentNode.childNodes[1].childNodes;
+
+            children[1].style.width = value + '%';
+            children[5].style.left = value + '%';
+            children[7].style.left = value + '%';
+            children[11].style.left = value + '%';
+            children[11].childNodes[1].innerHTML = $this.value;
+        }
+
+        function ageMaxCal() {
+            $this = document.getElementById("ageMax");
+            $this.value = Math.max($this.value, $this.parentNode.childNodes[3].value - (-1));
+
+            var value = (100 / (parseInt($this.max) - parseInt($this.min))) * parseInt($this.value) - (100 / (
+                parseInt($this.max) - parseInt($this.min))) * parseInt($this.min);
+
+            var children = $this.parentNode.childNodes[1].childNodes;
+            children[3].style.width = (100 - value) + '%';
+            children[5].style.right = (100 - value) + '%';
+            children[9].style.left = value + '%';
+            children[13].style.left = value + '%';
+            children[13].childNodes[1].innerHTML = $this.value;
+        }
     </script>
 </body>
 
