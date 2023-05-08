@@ -43,7 +43,7 @@ body {
 
 a {
     text-decoration: none;
-    color: inherit !important;
+    /* color: inherit !important; */
 }
 
 h1,
@@ -735,6 +735,17 @@ input[type="radio"]:checked+.label.woman {
     background-position: top;
 }
 
+.user-dp-inner-action {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    left: 35%;
+}
+
 .db-user-details-wrap {
     background-color: var(--mr-active);
     display: grid;
@@ -867,4 +878,39 @@ input[type="radio"]:checked+.label.woman {
 .single-user-card-wrap:hover .single-user-action {
     display: flex !important;
     transition: .3s;
+}
+
+/* My Match Page CSS  */
+.switchBtn input {
+    height: 28px;
+    width: 50px !important;
+    cursor: pointer
+}
+
+.switchBtn input:focus {
+    box-shadow: none !important;
+}
+
+.beeSeenHere-slider-item {
+    position: relative;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 52px;
+    margin-left: 20px;
+}
+
+.beeSeenHere-slider-inner-item {
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 0 0 52px 52px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+    padding-bottom: 20px;
+    padding-top: 70px;
+}
+
+.beeSeenHere-slider-inner-item h3 {
+    color: #fff;
 }

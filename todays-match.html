@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover, user-scalable=no">
+    <title>Welcome To Matchreal</title>
+
+    <!-- ==== css ==== -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+    <!-- Prelaoder  -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+    <!-- Prelaoder  -->
+    <!-- Header  -->
+    <header class="main-header mb-3 bg-white py-3 fixed-top">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-2">
+                    <div class="header-logo d-flex align-items-center">
+                        <img src="assets/images/logo.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-7 mx-auto">
+                    <div class="header-main-menu-wrap justify-content-center d-flex header-search position-relative">
+                        <input type="search" placeholder="Search" name="" class="form-control ms-3 rounded-5 w-50"
+                            id="">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="header-menu-right  text-end float-end">
+                        <div class="d-flex align-items-center">
+                            <div id="notification-toggle" class="header-notifaction">
+                                <img src="assets/images/icon/notification.svg" class="rounded-circle" alt="" width="50"
+                                    height="50">
+
+                                <div style="display: none;" id="notificationToggleItem"
+                                    class="notification-dropdown box-shadow-1">
+                                    <h4 class="dropdown-item-title">Notification</h4>
+                                    <h6 class="notification-sub-title">New</h6>
+                                    <div class="notification-item d-flex justify-content-between align-items-center">
+                                        <div style="background-image: url(assets/images/user/1.png);"
+                                            class="notification-user-dp">
+
+                                        </div>
+                                        <div>
+                                            <a href="/activity.html">
+                                                <p class="m-0 p-0">
+                                                    Lorem ipsum dolor sit amet consectetur, adipisicing...
+                                                </p>
+                                                <span class="notiTime">
+                                                    20h age
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h6 class="notification-sub-title pt-2">Earlier</h6>
+                                    <div class="notification-item d-flex justify-content-between align-items-center">
+                                        <div style="background-image: url(assets/images/user/5.png);"
+                                            class="notification-user-dp">
+
+                                        </div>
+                                        <div>
+                                            <p class="m-0 p-0">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing...
+                                            </p>
+                                            <span class="notiTime">
+                                                2h age
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="notification-item d-flex justify-content-between align-items-center">
+                                        <div style="background-image: url(assets/images/user/4.png);"
+                                            class="notification-user-dp">
+
+                                        </div>
+                                        <div>
+                                            <p class="m-0 p-0">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing...
+                                            </p>
+                                            <span class="notiTime">
+                                                2h age
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="notification-item d-flex justify-content-between align-items-center">
+                                        <div style="background-image: url(assets/images/user/5.png);"
+                                            class="notification-user-dp">
+
+                                        </div>
+                                        <div>
+                                            <p class="m-0 p-0">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing...
+                                            </p>
+                                            <span class="notiTime">
+                                                2h age
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="profile-toggle">
+                                <div class="user-dp" style="background-image: url('assets/images/user/1.png');"> </div>
+
+                                <div style="display: none;" id="profileToggleItem"
+                                    class="profile-dropdown box-shadow-1">
+                                    <div class="dropdown-profile-header">
+                                        <h3 class="m-0 p-0">Hello <span>Rasel Ahmed.</span></h3>
+                                        <p class="m-0 p-0">Available</p>
+                                    </div>
+                                    <div class="dropdown-profile-body">
+                                        <a href="edit-profile.html" class="dropdown-profile-menu">
+                                            <span>
+                                                <img src="assets/images/icon/edit-profile.svg" alt="">
+                                            </span> Edit Profile
+                                        </a>
+                                        <a href="introduce.html" class="dropdown-profile-menu">
+                                            <span>
+                                                <img src="assets/images/icon/introduce-yourself.svg" alt="">
+                                            </span> Introduce Yourself
+                                        </a>
+                                        <a href="your-preference.html" class="dropdown-profile-menu">
+                                            <span>
+                                                <img src="assets/images/icon/my-preference.svg" alt="">
+                                            </span> Your Preference
+                                        </a>
+                                        <a href="privacy-settings.html" class="dropdown-profile-menu">
+                                            <span> <img src="assets/images/icon/privacy.svg" alt=""></span> Privacy
+                                            Settings
+                                        </a>
+                                        <div class="sign-out text-center my-5">
+                                            <button class="sign-out-btn btn btn-outline-danger">Sign Out</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid mt-6">
+        <div class="row">
+            <!-- Sidebar  -->
+            <div class="col-md-2">
+                <div class="left-sidebar box-shadow-4">
+                    <div class="sidebar-menu-wrap">
+                        <a href="dashboard.html">
+                            <ul>
+                                <li>
+                                    <img src="assets/images/sidebar-menu/dashboard-active.svg" class="me-1" alt="home"
+                                        width="19" height="19">
+                                    <span>Dashboard</span>
+                                </li>
+                            </ul>
+                        </a>
+
+                        <a href="todays-match.html">
+                            <ul>
+                                <li class="active">
+                                    <img src="assets/images/sidebar-menu/todays-match.svg" class="me-1" alt="home"
+                                        width="19" height="19">
+                                    <span>Todays Match</span>
+                                </li>
+                            </ul>
+                        </a>
+
+                        <a href="my-match.html">
+                            <ul class="position-relative">
+                                <li>
+                                    <span class="badge rounded-pill sidebar-state">10</span>
+                                    <img src="assets/images/sidebar-menu/my-match.svg" class="me-1" alt="home"
+                                        width="19" height="19">
+                                    <span>My matches</span>
+                                </li>
+                            </ul>
+                        </a>
+
+                        <a href="activity.html">
+                            <ul>
+                                <li>
+                                    <img src="assets/images/sidebar-menu/activity.svg" class="me-1" alt="home"
+                                        width="19" height="19">
+                                    <span>Activity</span>
+                                </li>
+                            </ul>
+                        </a>
+
+                        <a href="message.html">
+                            <ul>
+                                <li>
+                                    <img src="assets/images/sidebar-menu/message.svg" class="me-1" alt="home" width="19"
+                                        height="19">
+                                    <span>Message</span>
+                                </li>
+                            </ul>
+                        </a>
+                        <a href="">
+                            <ul>
+                                <hr>
+                            </ul>
+                        </a>
+                        <a class="sidebarMenuFixed" href="settings.html">
+                            <ul>
+                                <li>
+                                    <img src="assets/images/sidebar-menu/settings.svg" class="me-1" alt="home"
+                                        width="19" height="19">
+                                    <span>Settings</span>
+                                </li>
+                            </ul>
+                        </a>
+                        <a href="help.html">
+                            <ul>
+                                <li>
+                                    <img src="assets/images/sidebar-menu/help.svg" class="me-1" alt="home" width="19"
+                                        height="19">
+                                    <span>Settings</span>
+                                </li>
+                            </ul>
+                        </a>
+                        <!-- <a href="logout.html"> -->
+                        <button class="w-100">
+                            <ul>
+                                <li>
+                                    <img src="assets/images/sidebar-menu/sign-out.svg" class="me-1" alt="home"
+                                        width="19" height="19">
+                                    <span>Logout</span>
+                                </li>
+                            </ul>
+                        </button>
+                        <!-- </a> -->
+                    </div>
+                </div>
+            </div>
+            <!-- Center Bar  -->
+            <div class="col-md-8 mx-auto margin-bottom-300">
+                <div class="widget-card p-3 text-center">
+                    <h3>Slider will add later</h3>
+                </div>
+            </div>
+            <!-- Right bar  -->
+            <div class="col-md-2">
+                <div class="right-sidebar">
+                    <div class="widget-card me-3">
+                        <img class="img-fluid rounded-2" src="assets/images/ads/1.png" alt="">
+                    </div>
+                    <div class="widget-card me-3">
+                        <img class="img-fluid rounded-2" src="assets/images/ads/2.png" alt="">
+                    </div>
+                    <div class="widget-card me-3">
+                        <img class="img-fluid rounded-2" src="assets/images/ads/3.png" alt="">
+                    </div>
+                    <div class="widget-card me-3">
+                        <img class="img-fluid rounded-2" src="assets/images/ads/4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==== Script File ==== -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
