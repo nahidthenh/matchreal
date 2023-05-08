@@ -1181,3 +1181,29 @@ div[age_range_slider]>input[type=range]::-ms-tooltip {
 .show-result-btn:hover {
     box-shadow: 0 3px 51px rgb(46, 164, 252, 52%);
 }
+
+.search-select-wrap {
+    margin-top: 30px;
+}
+
+.search-select-wrap div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+    margin-right: 40px;
+}
+
+.search-select-wrap input {
+    cursor: pointer;
+    height: 28px;
+    width: 55px !important;
+}
+
+.search-select-wrap input:focus {
+    box-shadow: none !important;
+}
+
+.form-switch input:checked~.form-check-label {
+    color: var(--mr-blue);
+}
