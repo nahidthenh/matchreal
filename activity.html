@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover, user-scalable=no">
+    <title>Welcome To Matchreal</title>
+
+    <!-- ==== css ==== -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+    <!-- Prelaoder  -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+    <!-- Prelaoder  -->
+    <!-- Header  -->
+    <header class="main-header mb-3 bg-white py-3 fixed-top">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-2">
+                    <div class="header-logo d-flex align-items-center">
+                        <img src="assets/images/logo.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-7 mx-auto">
+                    <div class="header-main-menu-wrap justify-content-center d-flex header-search position-relative">
+                        <input type="search" placeholder="Search" name="" class="form-control ms-3 rounded-5 w-50"
+                            id="">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="header-menu-right  text-end float-end">
+                        <div class="d-flex align-items-center">
+                            <div id="notification-toggle" class="header-notifaction">
+                                <img src="assets/images/icon/notification.svg" class="rounded-circle" alt="" width="50"
+                                    height="50">
+
+                                <div style="display: none;" id="notificationToggleItem"
+                                    class="notification-dropdown box-shadow-1">
+                                    <h4 class="dropdown-item-title">Notification</h4>
+                                    <h6 class="notification-sub-title">New</h6>
+                                    <div class="notification-item d-flex justify-content-between align-items-center">
+                                        <div style="background-image: url(assets/images/user/1.png);"
+                                            class="notification-user-dp">
+
+                                        </div>
+                                        <div>
+                                            <a href="/activity.html">
+                                                <p class="m-0 p-0">
+                                                    Lorem ipsum dolor sit amet consectetur, adipisicing...
+                                                </p>
+                                                <span class="notiTime">
+                                                    20h age
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h6 class="notification-sub-title pt-2">Earlier</h6>
+                                    <div class="notification-item d-flex justify-content-between align-items-center">
+                                        <div style="background-image: url(assets/images/user/5.png);"
+                                            class="notification-user-dp">
+
+                                        </div>
+                                        <div>
+                                            <p class="m-0 p-0">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing...
+                                            </p>
+                                            <span class="notiTime">
+                                                2h age
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="notification-item d-flex justify-content-between align-items-center">
+                                        <div style="background-image: url(assets/images/user/4.png);"
+                                            class="notification-user-dp">
+
+                                        </div>
+                                        <div>
+                                            <p class="m-0 p-0">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing...
+                                            </p>
+                                            <span class="notiTime">
+                                                2h age
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="notification-item d-flex justify-content-between align-items-center">
+                                        <div style="background-image: url(assets/images/user/5.png);"
+                                            class="notification-user-dp">
+
+                                        </div>
+                                        <div>
+                                            <p class="m-0 p-0">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing...
+                                            </p>
+                                            <span class="notiTime">
+                                                2h age
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="profile-toggle">
+                                <div class="user-dp" style="background-image: url('assets/images/user/1.png');"> </div>
+
+                                <div style="display: none;" id="profileToggleItem"
+                                    class="profile-dropdown box-shadow-1">
+                                    <div class="dropdown-profile-header">
+                                        <h3 class="m-0 p-0">Hello <span>Rasel Ahmed.</span></h3>
+                                        <p class="m-0 p-0">Available</p>
+                                    </div>
+                                    <div class="dropdown-profile-body">
+                                        <a href="edit-profile.html" class="dropdown-profile-menu">
+                                            <span>
+                                                <img src="assets/images/icon/edit-profile.svg" alt="">
+                                            </span> Edit Profile
+                                        </a>
+                                        <a href="introduce.html" class="dropdown-profile-menu">
+                                            <span>
+                                                <img src="assets/images/icon/introduce-yourself.svg" alt="">
+                                            </span> Introduce Yourself
+                                        </a>
+                                        <a href="your-preference.html" class="dropdown-profile-menu">
+                                            <span>
+                                                <img src="assets/images/icon/my-preference.svg" alt="">
+                                            </span> Your Preference
+                                        </a>
+                                        <a href="privacy-settings.html" class="dropdown-profile-menu">
+                                            <span> <img src="assets/images/icon/privacy.svg" alt=""></span> Privacy
+                                            Settings
+                                        </a>
+                                        <div class="sign-out text-center my-5">
+                                            <button class="sign-out-btn btn btn-outline-danger">Sign Out</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid mt-6">
+        <div class="row">
+            <!-- Sidebar  -->
+            <div class="col-md-2">
+                <div class="left-sidebar box-shadow-4">
+                    <div class="sidebar-menu-wrap">
+                        <a href="dashboard.html">
+                            <ul>
+                                <li>
+                                    <img src="assets/images/sidebar-menu/dashboard-active.svg" class="me-1" alt="home"
+                                        width="19" height="19">
+                                    <span>Dashboard</span>
+                                </li>
+                            </ul>
+                        </a>
+
+                        <a href="todays-match.html">
+                            <ul>
+                                <li>
+                                    <img src="assets/images/sidebar-menu/todays-match.svg" class="me-1" alt="home"
+                                        width="19" height="19">
+                                    <span>Todays Match</span>
+                                </li>
+                            </ul>
+                        </a>
+
+                        <a href="my-match.html">
+                            <ul class="position-relative">
+                                <li>
+                                    <span class="badge rounded-pill sidebar-state">10</span>
+                                    <img src="assets/images/sidebar-menu/my-match.svg" class="me-1" alt="home"
+                                        width="19" height="19">
+                                    <span>My matches</span>
+                                </li>
+                            </ul>
+                        </a>
+
+                        <a href="activity.html">
+                            <ul>
+                                <li class="active">
+                                    <img src="assets/images/sidebar-menu/activity.svg" class="me-1" alt="home"
+                                        width="19" height="19">
+                                    <span>Activity</span>
+                                </li>
+                            </ul>
+                        </a>
+
+                        <a href="message.html">
+                            <ul>
+                                <li>
+                                    <img src="assets/images/sidebar-menu/message.svg" class="me-1" alt="home" width="19"
+                                        height="19">
+                                    <span>Message</span>
+                                </li>
+                            </ul>
+                        </a>
+                        <a href="">
+                            <ul>
+                                <hr>
+                            </ul>
+                        </a>
+                        <a class="sidebarMenuFixed" href="settings.html">
+                            <ul>
+                                <li>
+                                    <img src="assets/images/sidebar-menu/settings.svg" class="me-1" alt="home"
+                                        width="19" height="19">
+                                    <span>Settings</span>
+                                </li>
+                            </ul>
+                        </a>
+                        <a href="help.html">
+                            <ul>
+                                <li>
+                                    <img src="assets/images/sidebar-menu/help.svg" class="me-1" alt="home" width="19"
+                                        height="19">
+                                    <span>Settings</span>
+                                </li>
+                            </ul>
+                        </a>
+                        <!-- <a href="logout.html"> -->
+                        <button class="w-100">
+                            <ul>
+                                <li>
+                                    <img src="assets/images/sidebar-menu/sign-out.svg" class="me-1" alt="home"
+                                        width="19" height="19">
+                                    <span>Logout</span>
+                                </li>
+                            </ul>
+                        </button>
+                        <!-- </a> -->
+                    </div>
+                </div>
+            </div>
+            <!-- Center Bar  -->
+            <div class="col-md-8 mx-auto margin-bottom-300">
+                <!-- Activity  Tab Item -->
+                <div class="inner-widget-wrap h-600px">
+                    <div class="p-3 widget-card">
+                        <div class="widget-header">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="activity-menu active" id="pills-visitors-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-visitors" type="button" role="tab"
+                                        aria-controls="pills-visitors" aria-selected="true">
+                                        <img width="80" height="80" src="assets/images/activity/visitors.svg" alt="">
+                                        <span>Visitor</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="activity-menu " id="pills-you-viewed-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-you-viewed" type="button" role="tab"
+                                        aria-controls="pills-you-viewed" aria-selected="false">
+                                        <img width="80" height="80" src="assets/images/activity/you-viewed.svg" alt="">
+                                        <span>You Viewwd</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="activity-menu " id="pills-connections-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-connections" type="button" role="tab"
+                                        aria-controls="pills-connections" aria-selected="false">
+                                        <img width="80" height="80" src="assets/images/activity/connections.svg" alt="">
+                                        <span>Connection</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="activity-menu " id="pills-loved-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-loved" type="button" role="tab"
+                                        aria-controls="pills-loved" aria-selected="false">
+                                        <img width="80" height="80" src="assets/images/activity/loved.svg" alt="">
+                                        <span>Loved</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="activity-menu " id="pills-fav-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-fav" type="button" role="tab" aria-controls="pills-fav"
+                                        aria-selected="false">
+                                        <img width="80" height="80" src="assets/images/activity/favorite.svg" alt="">
+                                        <span>Favorite</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="activity-menu " id="pills-blocked-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-blocked" type="button" role="tab"
+                                        aria-controls="pills-blocked" aria-selected="false">
+                                        <img width="80" height="80" src="assets/images/activity/blocked.svg" alt="">
+                                        <span>Blocked</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-visitors" role="tabpanel"
+                            aria-labelledby="pills-visitors-tab" tabindex="0">
+
+                            <div class="my-3">
+                                <div class="innerItemSlider text-center mx-5">
+                                    <div class="single-user-card-wrap">
+                                        <div class="single-user-header">
+                                            <div class="card-user-dp"
+                                                style="background-image: url('assets/images/user/F-1.png');"></div>
+                                            <div class="card-user-dp"
+                                                style="background-image: url('assets/images/user/F-2.png');"></div>
+                                            <div class="card-user-dp"
+                                                style="background-image: url('assets/images/user/F-3.png');"></div>
+                                        </div>
+                                        <div class="single-user-body">
+                                            <div class="single-user-profile"
+                                                style="background-image: url('assets/images/user/1.png');">
+                                            </div>
+                                            <h3 class="mt-3">Jasemine Jessy</h3>
+                                            <p class="mb-4">Cape Town</p>
+                                            <div
+                                                class="d-flex justify-content-center align-items-center single-user-action">
+                                                <div>
+                                                    <button class="single-user-action-btn me-3 bg-pink">
+                                                        <img width="33" height="29"
+                                                            src="assets/images/icon/connection.svg" alt="">
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <a class="single-user-action-btn bg-blue" href="message.html">
+                                                        <img width="33" height="29" src="assets/images/icon/chat.svg"
+                                                            alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-user-card-wrap">
+                                        <div class="single-user-header">
+                                            <div class="card-user-dp"
+                                                style="background-image: url('assets/images/user/M-1.png');"></div>
+                                            <div class="card-user-dp"
+                                                style="background-image: url('assets/images/user/M-2.png');"></div>
+                                            <div class="card-user-dp"
+                                                style="background-image: url('assets/images/user/M-3.png');"></div>
+                                        </div>
+                                        <div class="single-user-body">
+                                            <div class="single-user-profile"
+                                                style="background-image: url('assets/images/user/2.png');">
+                                            </div>
+                                            <h3 class="mt-3">Jasemine Jessy</h3>
+                                            <p class="mb-4">Cape Town</p>
+                                            <div
+                                                class="d-flex justify-content-center align-items-center single-user-action">
+                                                <div>
+                                                    <button class="single-user-action-btn me-3 bg-pink">
+                                                        <img width="33" height="29"
+                                                            src="assets/images/icon/connection.svg" alt="">
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <a class="single-user-action-btn bg-blue" href="message.html">
+                                                        <img width="33" height="29" src="assets/images/icon/chat.svg"
+                                                            alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-user-card-wrap">
+                                        <div class="single-user-header">
+                                            <div class="card-user-dp"
+                                                style="background-image: url('assets/images/user/F-4.png');"></div>
+                                            <div class="card-user-dp"
+                                                style="background-image: url('assets/images/user/F-5.png');"></div>
+                                        </div>
+                                        <div class="single-user-body">
+                                            <div class="single-user-profile"
+                                                style="background-image: url('assets/images/user/3.png');">
+                                            </div>
+                                            <h3 class="mt-3">Jasemine Jessy</h3>
+                                            <p class="mb-4">Cape Town</p>
+                                            <div
+                                                class="d-flex justify-content-center align-items-center single-user-action">
+                                                <div>
+                                                    <button class="single-user-action-btn me-3 bg-pink">
+                                                        <img width="33" height="29"
+                                                            src="assets/images/icon/connection.svg" alt="">
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <a class="single-user-action-btn bg-blue" href="message.html">
+                                                        <img width="33" height="29" src="assets/images/icon/chat.svg"
+                                                            alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-user-card-wrap">
+                                        <div class="single-user-header">
+                                            <div class="card-user-dp"
+                                                style="background-image: url('assets/images/user/1.png');"></div>
+                                        </div>
+                                        <div class="single-user-body">
+                                            <div class="single-user-profile"
+                                                style="background-image: url('assets/images/user/4.png');">
+                                            </div>
+                                            <h3 class="mt-3">Jasemine Jessy</h3>
+                                            <p class="mb-4">Cape Town</p>
+                                            <div
+                                                class="d-flex justify-content-center align-items-center single-user-action">
+                                                <div>
+                                                    <button class="single-user-action-btn me-3 bg-pink">
+                                                        <img width="33" height="29"
+                                                            src="assets/images/icon/connection.svg" alt="">
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <a class="single-user-action-btn bg-blue" href="message.html">
+                                                        <img width="33" height="29" src="assets/images/icon/chat.svg"
+                                                            alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-user-card-wrap">
+                                        <div class="single-user-header">
+                                            <div class="card-user-dp"
+                                                style="background-image: url('assets/images/user/M-1.png');"></div>
+                                            <div class="card-user-dp"
+                                                style="background-image: url('assets/images/user/M-2.png');"></div>
+                                            <div class="card-user-dp"
+                                                style="background-image: url('assets/images/user/M-3.png');"></div>
+                                        </div>
+                                        <div class="single-user-body">
+                                            <div class="single-user-profile"
+                                                style="background-image: url('assets/images/user/5.png');">
+                                            </div>
+                                            <h3 class="mt-3">Jasemine Jessy</h3>
+                                            <p class="mb-4">Cape Town</p>
+                                            <div
+                                                class="d-flex justify-content-center align-items-center single-user-action">
+                                                <div>
+                                                    <button class="single-user-action-btn me-3 bg-pink">
+                                                        <img width="33" height="29"
+                                                            src="assets/images/icon/connection.svg" alt="">
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <a class="single-user-action-btn bg-blue" href="message.html">
+                                                        <img width="33" height="29" src="assets/images/icon/chat.svg"
+                                                            alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-user-card-wrap">
+                                        <div class="single-user-header">
+                                            <div class="card-user-dp"
+                                                style="background-image: url('assets/images/user/F-4.png');"></div>
+                                            <div class="card-user-dp"
+                                                style="background-image: url('assets/images/user/F-5.png');"></div>
+                                        </div>
+                                        <div class="single-user-body">
+                                            <div class="single-user-profile"
+                                                style="background-image: url('assets/images/user/6.png');">
+                                            </div>
+                                            <h3 class="mt-3">Jasemine Jessy</h3>
+                                            <p class="mb-4">Cape Town</p>
+                                            <div
+                                                class="d-flex justify-content-center align-items-center single-user-action">
+                                                <div>
+                                                    <button class="single-user-action-btn me-3 bg-pink">
+                                                        <img width="33" height="29"
+                                                            src="assets/images/icon/connection.svg" alt="">
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <a class="single-user-action-btn bg-blue" href="message.html">
+                                                        <img width="33" height="29" src="assets/images/icon/chat.svg"
+                                                            alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="tab-pane fade" id="pills-you-viewed" role="tabpanel"
+                            aria-labelledby="pills-you-viewed-tab" tabindex="0">
+
+                            <h3>You viewed</h3>
+
+                        </div>
+                        <div class="tab-pane fade" id="pills-connections" role="tabpanel"
+                            aria-labelledby="pills-connections-tab" tabindex="0">...
+                        </div>
+                        <div class="tab-pane fade" id="pills-loved" role="tabpanel" aria-labelledby="pills-loved-tab"
+                            tabindex="0">...
+                        </div>
+                        <div class="tab-pane fade" id="pills-fav" role="tabpanel" aria-labelledby="pills-fav-tab"
+                            tabindex="0">...
+                        </div>
+                        <div class="tab-pane fade" id="pills-blocked" role="tabpanel"
+                            aria-labelledby="pills-blocked-tab" tabindex="0">...
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Right bar  -->
+            <div class="col-md-2">
+                <div class="right-sidebar">
+                    <div class="widget-card me-3">
+                        <img class="img-fluid rounded-2" src="assets/images/ads/1.png" alt="">
+                    </div>
+                    <div class="widget-card me-3">
+                        <img class="img-fluid rounded-2" src="assets/images/ads/2.png" alt="">
+                    </div>
+                    <div class="widget-card me-3">
+                        <img class="img-fluid rounded-2" src="assets/images/ads/3.png" alt="">
+                    </div>
+                    <div class="widget-card me-3">
+                        <img class="img-fluid rounded-2" src="assets/images/ads/4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==== Script File ==== -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.innerItemSlider').slick({
+                infinite: false,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                prevArrow: `<button type='button' class='slick-prev pull-left sl'>
+                        <i class="ri-arrow-left-s-line"></i>
+                    </button>`,
+                nextArrow: `<button type='button' class='slick-next pull-right sr'>
+                        <i class="ri-arrow-right-s-line"></i>
+                    </button>`
+            });
+        });
+    </script>
+</body>
+
+</html>
