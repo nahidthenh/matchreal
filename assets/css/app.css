@@ -1339,3 +1339,13 @@ div[age_range_slider]>input[type=range]::-ms-tooltip {
 .photos-you-can h3 {
     margin: 10px 0;
 }
+
+.user-gallery-photo-uploader {
+    height: 275px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    background-color: var(--mr-active);
+}
