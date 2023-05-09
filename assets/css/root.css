@@ -72,6 +72,9 @@
     box-shadow: 3px 0 64px rgb(0, 0, 0, 8%);
 }
 
+.box-shadow-5 {
+    box-shadow: 0 3px 49px rgb(252, 197, 46, 100%);
+}
 
 .theme-btn-1 {
     background: var(--mr-theme-primary);
