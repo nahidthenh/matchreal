@@ -1298,3 +1298,44 @@ div[age_range_slider]>input[type=range]::-ms-tooltip {
     background-size: cover;
     background-position: top;
 }
+
+/* Settings  */
+/* Edit Profile */
+
+.edit-profile-dp {
+    height: 500px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.dp-uplaod-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.edit-profile-info button {
+    background: var(--mr-blue);
+    color: var(--mr-white);
+    padding: 10px 40px;
+    border-radius: 50px;
+    margin-right: 10px;
+    box-shadow: 0 3px 51px rgb(46, 164, 252, 52%);
+}
+
+.edit-profile-info p {
+    font-size: var(--mr-fs-h5);
+}
+
+.photos-you-can img {
+    border: 1px solid;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 70px;
+}
+
+.photos-you-can h3 {
+    margin: 10px 0;
+}
