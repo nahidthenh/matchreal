@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="170.922" height="44" viewBox="0 0 170.922 44">
+  <g id="Group_42" data-name="Group 42" transform="translate(-1273 -575)">
+    <g id="Group_41" data-name="Group 41" transform="translate(-4.305 9.056)">
+      <path id="angle-small-down" d="M22.794.688a2.348,2.348,0,0,0-3.322,0L12.294,7.866a.783.783,0,0,1-1.107,0L4.009.688A2.348,2.348,0,1,0,.687,4.009l7.179,7.179a5.479,5.479,0,0,0,7.749,0l7.179-7.179A2.348,2.348,0,0,0,22.794.688Z" transform="translate(1435.434 600.099) rotate(-90)" fill="#969598" opacity="0.35"/>
+      <path id="angle-small-down-2" data-name="angle-small-down" d="M22.794.688a2.348,2.348,0,0,0-3.322,0L12.294,7.866a.783.783,0,0,1-1.107,0L4.009.688A2.348,2.348,0,1,0,.687,4.009l7.179,7.179a5.479,5.479,0,0,0,7.749,0l7.179-7.179A2.348,2.348,0,0,0,22.794.688Z" transform="translate(1419.494 600.099) rotate(-90)" fill="#969598" opacity="0.35"/>
+      <path id="angle-small-down-3" data-name="angle-small-down" d="M22.794.688a2.348,2.348,0,0,0-3.322,0L12.294,7.866a.783.783,0,0,1-1.107,0L4.009.688A2.348,2.348,0,1,0,.687,4.009l7.179,7.179a5.479,5.479,0,0,0,7.749,0l7.179-7.179A2.348,2.348,0,0,0,22.794.688Z" transform="translate(1403.554 600.099) rotate(-90)" fill="#969598" opacity="0.35"/>
+    </g>
+    <text id="SWIPE" transform="translate(1273 610)" fill="#969598" font-size="36" font-family="Inter-Bold, Inter" font-weight="700" opacity="0.35"><tspan x="0" y="0">SWIPE</tspan></text>
+  </g>
+</svg>
