@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140">
+  <g id="Group_446" data-name="Group 446" transform="translate(-477 -539)">
+    <g id="pxfuel" transform="translate(477 539)" fill="#f5f5f5" stroke="#fff" stroke-width="5">
+      <rect width="140" height="140" rx="70" stroke="none"/>
+      <rect x="2.5" y="2.5" width="135" height="135" rx="67.5" fill="none"/>
+    </g>
+    <g id="mode-landscape" transform="translate(516.115 578.115)">
+      <circle id="Ellipse_16" data-name="Ellipse 16" cx="6.425" cy="6.425" r="6.425" transform="translate(34.695 14.163)" fill="#2ea4fc"/>
+      <path id="Path_201" data-name="Path 201" d="M33.99,16a2.57,2.57,0,0,0-2.57,2.57v5.14a7.71,7.71,0,0,1-7.71,7.71H18.57a2.57,2.57,0,0,0,0,5.14h5.14A12.865,12.865,0,0,0,36.56,23.71V18.57A2.57,2.57,0,0,0,33.99,16Z" transform="translate(25.12 25.12)" fill="#2ea4fc"/>
+      <path id="Path_202" data-name="Path 202" d="M2.57,20.56a2.57,2.57,0,0,0,2.57-2.57V12.85a7.71,7.71,0,0,1,7.71-7.71h5.14a2.57,2.57,0,0,0,0-5.14H12.85A12.865,12.865,0,0,0,0,12.85v5.14A2.57,2.57,0,0,0,2.57,20.56Z" fill="#2ea4fc"/>
+      <path id="Path_203" data-name="Path 203" d="M17.99,31.42H12.85a7.71,7.71,0,0,1-7.71-7.71V18.57a2.57,2.57,0,0,0-5.14,0v5.14A12.865,12.865,0,0,0,12.85,36.56h5.14a2.57,2.57,0,0,0,0-5.14Z" transform="translate(0 25.12)" fill="#2ea4fc"/>
+      <path id="Path_204" data-name="Path 204" d="M23.71,0H18.57a2.57,2.57,0,0,0,0,5.14h5.14a7.71,7.71,0,0,1,7.71,7.71v5.14a2.57,2.57,0,0,0,5.14,0V12.85A12.865,12.865,0,0,0,23.71,0Z" transform="translate(25.12)" fill="#2ea4fc"/>
+      <path id="Path_205" data-name="Path 205" d="M41.8,30.582l-19.5-19.5a7.71,7.71,0,0,0-10.9,0L5.506,16.979A5.14,5.14,0,0,0,4,20.613v6.646a7.71,7.71,0,0,0,7.71,7.71H39.98A2.57,2.57,0,0,0,41.8,30.582Z" transform="translate(6.28 13.861)" fill="#2ea4fc"/>
+    </g>
+  </g>
+</svg>

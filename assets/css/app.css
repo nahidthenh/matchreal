@@ -1349,3 +1349,31 @@ div[age_range_slider]>input[type=range]::-ms-tooltip {
     margin-bottom: 25px;
     background-color: var(--mr-active);
 }
+
+.acc-privicy {
+    margin: 5px;
+    background: var(--mr-main-bg);
+    text-align: center;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.acc-privicy img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.acc-privicy h4 {
+    margin-bottom: 10px;
+}
+
+.acc-privicy button {
+    background: var(--mr-blue);
+    color: var(--mr-white);
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+
+.acc-privicy button:hover {
+    box-shadow: 0 3px 51px rgb(46, 164, 252, 52%);
+}
