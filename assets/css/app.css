@@ -1379,3 +1379,131 @@ div[age_range_slider]>input[type=range]::-ms-tooltip {
 .acc-privicy button:hover {
     box-shadow: 0 3px 51px rgb(46, 164, 252, 52%);
 }
+
+/*
+    ///////////////////////////////////// 
+ 
+                Messenger css Start
+
+    /////////////////////////////////////  
+*/
+/* Hide scrollbar for Chrome */
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+/* Hide scrollbar for Firefox */
+html {
+    scrollbar-width: none;
+}
+
+body::-moz-scrollbar {
+    width: 0.5em;
+}
+
+body::-moz-scrollbar-thumb {
+    background-color: transparent;
+}
+
+/* Messenger Sidebar  */
+.message-item-wrap {
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.search-converstion i {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+}
+
+.search-converstion {
+    position: relative;
+}
+
+.msngr-search {
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px 40px;
+    border-radius: 50px;
+    border: 0;
+    background: #F3F3F5;
+    font-size: 14px;
+}
+
+.message-list-item {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.message-list-item.active {
+    background: #F5F5F5;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.message-list-item:hover {
+    background: #F5F5F5;
+}
+
+.message-item-dp {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.message-item-dp.active::after {
+    position: absolute;
+    content: '';
+    bottom: 1px;
+    right: 0;
+    background: #55CA36;
+    height: 10px;
+    width: 10px;
+    border-radius: 100px;
+}
+
+.message-list-user h4 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #010101;
+}
+
+.message-list-user p {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    /* line-height: 18px; */
+}
+
+.message-list-more-option {
+    margin: 0 0 0 auto;
+    opacity: 0;
+}
+
+.message-list-item.active .message-list-more-option {
+    opacity: 1;
+}
+
+.message-list-item:hover .message-list-more-option {
+    opacity: 1;
+}
+
+/*
+    ///////////////////////////////////// 
+ 
+                Messenger css End
+
+    /////////////////////////////////////  
+*/
