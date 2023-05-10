@@ -1,0 +1,419 @@
+/* Modal Animition CSS  */
+
+/* For Referls Popup  */
+.vivify {
+    -webkit-animation-duration: .8s !important;
+    -webkit-animation-fill-mode: both !important;
+    animation-duration: .8s !important;
+    animation-fill-mode: both !important;
+}
+
+.fadeInBottom {
+    -webkit-animation-name: fadeInBottom;
+    animation-name: fadeInBottom;
+    -webkit-animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955)
+}
+
+@keyframes fadeInBottom {
+    0% {
+        -webkit-transform: translate3d(0, 400px, 0);
+        transform: translate3d(0, 400px, 0);
+        opacity: 0
+    }
+
+    50% {
+        opacity: .2
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+.delay-100 {
+    -webkit-animation-delay: .1s;
+    animation-delay: .1s
+}
+
+.delay-200 {
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s
+}
+
+.delay-300 {
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s
+}
+
+.delay-400 {
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s
+}
+
+.delay-500 {
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s
+}
+
+.delay-600 {
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s
+}
+
+.delay-700 {
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s
+}
+
+.delay-800 {
+    -webkit-animation-delay: .8s;
+    animation-delay: .8s
+}
+
+.delay-900 {
+    -webkit-animation-delay: .9s;
+    animation-delay: .9s
+}
+
+
+.ifd-item+.ifd-item {
+    border-top: 1px solid #e3e3e3;
+    padding-top: 1em;
+    margin-top: 1em;
+}
+
+/* Send Credit  */
+.send-credits-header-dp {
+    display: flex;
+    justify-content: center;
+}
+
+.sch-my-dp {
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+    background-position: top;
+    border-radius: 100px;
+}
+
+.sch-her-dp {
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+    background-position: top;
+    border-radius: 100px;
+    margin-left: -5px;
+}
+
+.popIn {
+    -webkit-animation-name: popIn;
+    animation-name: popIn
+}
+
+@keyframes popIn {
+    0% {
+        -webkit-transform: scale3d(0, 0, 0);
+        transform: scale3d(0, 0, 0);
+        opacity: 0
+    }
+
+    20% {
+        opacity: 1
+    }
+
+    40% {
+        -webkit-animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+        animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+        -webkit-transform: scale3d(1.08, 1.08, 1.08);
+        transform: scale3d(1.08, 1.08, 1.08)
+    }
+
+    60% {
+        -webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+        animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+
+    80% {
+        -webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+        animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+        transform: scale3d(1.03, 1.03, 1.03)
+    }
+
+    100% {
+        -webkit-animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955)
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.send-credit-btn {
+    background: var(--mr-blue);
+    color: var(--mr-white);
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: var(--mr-fs-h5);
+}
+
+.send-cridit-form input {
+    padding: 15px 15px;
+    font-size: 14px;
+}
+
+/* .referls-dp {
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    margin: 0 auto;
+    background-size: cover;
+} */
+
+/* Report Modal  */
+.modal-dialog-right-end {
+    min-height: calc(100% - var(--bs-modal-margin) * 2);
+    display: flex;
+    align-items: end;
+    position: absolute;
+    right: 10px;
+}
+
+.report-modal-dp {
+    width: 95px;
+    height: 95px;
+    background-position: top;
+    background-size: cover;
+    border-radius: 100px;
+}
+
+.width400 {
+    width: 400px;
+    height: auto;
+}
+
+.report-check {
+    padding: 10px 30px;
+    margin-left: 0px;
+    width: 95%;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px 0 rgba(37, 39, 44, 0.1), 0 2px 3px 0 rgba(37, 39, 44, 0.1) inset;
+    margin-bottom: 10px;
+}
+
+/* Delete Conversition */
+.dc-dp {
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: top;
+}
+
+/* SendGift  */
+.send-gift-dp {
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    background-size: cover;
+    background-position: top;
+}
+
+.modalHeaderbg {
+    background-color: #4158D0 !important;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%) !important;
+}
+
+.modalHeaderbg h1 {
+    color: var(--mr-white);
+}
+
+.gradient5 {
+    background-color: #21D4FD !important;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%) !important;
+}
+
+.sendGiftBox {
+    border: 3px solid #ededed;
+    cursor: pointer;
+}
+
+.sendGiftBox:hover {
+    border-color: #B721FF;
+    transition: 0.3s;
+}
+
+.gradient18 {
+    background-color: #4158D0 !important;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%) !important;
+}
+
+.innerSmall-wrap {
+    text-align: center;
+}
+
+.ovl-promo-label.vivify.popIn.delay-500.gradient18 {
+    position: absolute;
+    top: 110px;
+    right: 50px;
+}
+
+#send-gift-btn {
+    text-align: center;
+    border-radius: 50px;
+    border: 0;
+    padding: 10px 40px;
+}
+
+/* Modal Open Effect  */
+
+.swoopInBottom {
+    -webkit-animation-name: swoopInBottom !important;
+    animation-name: swoopInBottom !important;
+    -webkit-animation-duration: .5s !important;
+    animation-duration: .5s !important;
+}
+
+@keyframes swoopInBottom {
+    0% {
+        opacity: 0;
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transform: scaleY(1.5) translate3d(0, 250px, 0);
+        transform: scaleY(1.5) translate3d(0, 250px, 0)
+    }
+
+    40% {
+        opacity: 1;
+        -webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+        animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+        -webkit-transform: scaleY(1.2) translate3d(0, 0, 0);
+        transform: scaleY(1.2) translate3d(0, 0, 0)
+    }
+
+    65% {
+        -webkit-transform: scaleY(1) translate3d(0, -20px, 0);
+        transform: scaleY(1) translate3d(0, -20px, 0)
+    }
+
+    100% {
+        -webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+        animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+        -webkit-transform: scaleY(1) translate3d(0, 0, 0);
+        transform: scaleY(1) translate3d(0, 0, 0)
+    }
+}
+
+.swoopOutBottom {
+    -webkit-animation-name: swoopOutBottom;
+    animation-name: swoopOutBottom;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s
+}
+
+@keyframes swoopOutBottom {
+    0% {
+        -webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+        animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+        -webkit-transform: scaleY(1) translate3d(0, 0, 0);
+        transform: scaleY(1) translate3d(0, 0, 0)
+    }
+
+    40% {
+        opacity: 1;
+        -webkit-transform: scaleY(1) translate3d(0, -20px, 0);
+        transform: scaleY(1) translate3d(0, -20px, 0)
+    }
+
+    60% {
+        -webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+        animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+        -webkit-transform: scaleY(1.2) translate3d(0, 0, 0);
+        transform: scaleY(1.2) translate3d(0, 0, 0)
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transform: scaleY(1.5) translate3d(0, 200px, 0);
+        transform: scaleY(1.5) translate3d(0, 200px, 0)
+    }
+}
+
+/* Referls  */
+.referls-dp {
+    height: 120px;
+    width: 120px;
+    border-radius: 100px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: top;
+}
+
+.modal-box-header h3 {
+    font-weight: var(--mf-fw-bold);
+}
+
+.modal-box-main {
+    margin-bottom: 30px;
+}
+
+.modal-share-link p {
+    border-radius: 3em;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 1.5em 0;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.ift-copy-code {
+    border: 1px solid #222;
+    border-radius: 2em;
+    color: #222;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.685em;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    line-height: 1em;
+    margin-left: 1em;
+    padding: 1em 1em;
+    position: relative;
+    text-transform: uppercase;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.gem-icon {
+    background-image: url('../images/coin.png');
+    height: 25px !important;
+    width: 35px !important;
+    display: block;
+    margin: 0 auto;
+}

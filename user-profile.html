@@ -219,12 +219,12 @@
                                 </li>
                             </ul>
                         </a>
-                        <a href="help.html">
+                        <a data-bs-toggle="modal" data-bs-target="#referralsModal">
                             <ul>
                                 <li>
-                                    <img src="assets/images/sidebar-menu/help.svg" class="me-1" alt="home" width="19"
-                                        height="19">
-                                    <span>Help</span>
+                                    <img src="assets/images/sidebar-menu/refferal.svg" class="me-1" alt="home"
+                                        width="19" height="19">
+                                    <span>Refferals</span>
                                 </li>
                             </ul>
                         </a>
@@ -296,10 +296,11 @@
                                     </p>
                                 </div>
                                 <div class="db-user-btn-group">
-                                    <button class="theme-btn-3" type="btn">My Credit</button>
-                                    <button class="theme-btn-3" type="btn">Claim Rewards</button>
-                                    <button class="theme-btn-3 update-btn bg-gold text-white"
-                                        type="btn">Premium</button>
+                                    <a class="theme-btn-3 text-center d-inline-block" href="message.html">Message</a>
+                                    <button class="theme-btn-3" type="btn" data-bs-toggle="modal"
+                                        data-bs-target="#largeModal">Send Gift</button>
+                                    <button class="theme-btn-3" type="btn" data-bs-toggle="modal"
+                                        data-bs-target="#sendCreditModal">Transfer Credit</button>
                                 </div>
                             </div>
                         </div>
@@ -637,7 +638,276 @@
             </div>
         </div>
     </div>
-    <!-- Search Modal  -->
+
+
+
+    <!-- Modal HTML  -->
+
+    <!-- ====================================== Referrals Modal Start ====================================== -->
+    <div class="modal" id="referralsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-box-header bg-black text-center pb-5">
+                    <div class="referls-dp my-3" style="background-image: url(assets/images/user/1.png);"></div>
+                    <h3 class="text-white mb-0">Get referrals to earn rewards</h3>
+                </div>
+                <div class="modal-box-main bg-white text-center">
+                    <div class="modal-share-link">
+                        <p>
+                            Share your referral url link with friends.
+                        </p>
+                        <strong class="rlt-referral-code"
+                            style="background:#eee;border-radius: 25px;padding: 10px;padding-right: 25px;padding-left:25px">
+                            https://matchreal.com/ref/xshaanx
+                        </strong>
+                        <span class="ift-copy-code">Copy</span>
+                    </div>
+                </div>
+                <div class="getRefarel-item my-3 mx-3">
+                    <div class="row px-2 ifd-item vivify fadeInBottom delay-100">
+                        <div class="col-10">
+                            <p>Earn <strong>10 Credits</strong> when your friend purchases this CREDIT
+                                package
+                                <strong><small>(1000 Credits)</small></strong>.</p>
+                        </div>
+                        <div class="col-2 text-center">
+                            <span><em class="gem-icon"></em>10</span>
+                        </div>
+                    </div>
+                    <!-- <hr> -->
+                    <div class="row px-2 ifd-item vivify fadeInBottom delay-200">
+                        <div class="col-10">
+                            <p>Earn <strong>10 Credits</strong> when your friend purchases this CREDIT
+                                package
+                                <strong><small>(1000 Credits)</small></strong>.</p>
+                        </div>
+                        <div class="col-2 text-center">
+                            <span><em class="gem-icon"></em>50</span>
+                        </div>
+                    </div>
+                    <!-- <hr> -->
+                    <div class="row px-2 ifd-item vivify fadeInBottom delay-300">
+                        <div class="col-10">
+                            <p>Earn <strong>10 Credits</strong> when your friend purchases this CREDIT
+                                package
+                                <strong><small>(1000 Credits)</small></strong>.</p>
+                        </div>
+                        <div class="col-2 text-center">
+                            <span><em class="gem-icon"></em>150</span>
+                        </div>
+                    </div>
+                    <!-- <hr> -->
+                    <div class="row px-2 ifd-item vivify fadeInBottom delay-400">
+                        <div class="col-10">
+                            <p>Earn <strong>10 Credits</strong> when your friend purchases this CREDIT
+                                package
+                                <strong><small>(1000 Credits)</small></strong>.</p>
+                        </div>
+                        <div class="col-2 text-center">
+                            <span><em class="gem-icon"></em>150</span>
+                        </div>
+                    </div>
+                    <!-- hr  -->
+                    <div class="row px-2 ifd-item vivify fadeInBottom delay-500">
+                        <div class="col-10">
+                            <p>Earn <strong>10 Credits</strong> when your friend purchases this CREDIT
+                                package
+                                <strong><small>(1000 Credits)</small></strong>.</p>
+                        </div>
+                        <div class="col-2 text-center">
+                            <span><em class="gem-icon"></em>150</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ====================================== Referrals Modal End ====================================== -->
+
+    <!-- ====================================== Send Credit Modal Start ====================================== -->
+
+    <div class="modal" id="sendCreditModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered vivify swoopInBottom">
+            <div class="modal-content">
+                <div class="send-credits-close p-3 text-end">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="send-credits-header-dp">
+                    <div class="sch-my-dp vivify delay-500 popIn"
+                        style="background-image: url('assets/images/user/1.png');"></div>
+                    <div class="sch-her-dp vivify delay-600 popIn"
+                        style="background-image: url('assets/images/user/6.png');"></div>
+                </div>
+                <div class="send-cridit-form">
+                    <div class="vivify delay-300 fadeIn text-center my-3">
+                        <h3>Send credits to Kaylah</h3>
+                        <p>Transfer credits from your account to Kaylah</p>
+                        <div class="my-4 mx-5">
+                            <input type="number" placeholder="Add how much credits we will transfer"
+                                class="form-control">
+                        </div>
+                    </div>
+                    <div class="vivify delay-700 fadeIn text-center">
+                        <button class="send-credit-btn">Send Credit</button>
+                        <p style="color:#555;font-size: 12px;">You have <b class="userCredits">4996</b>
+                            Credits
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================================== Send Credit Modal End ====================================== -->
+
+
+    <!-- ====================================== Send Gift Modal End ====================================== -->
+
+    <!-- Large modal -->
+    <div class="modal fade" id="largeModal" tabindex="-1" aria-labelledby="largeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg vivify swoopInBottom modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header modalHeaderbg">
+                    <div></div>
+                    <div>
+                        <h1 class="modal-title d-flex justify-content-center align-items-center fs-5"
+                            id="exampleModalToggleLabel">Sending gift to
+                            <div class="send-gift-dp mx-3" style="background-image: url(assets/images/user/6.png);">
+                            </div>
+                            Gab
+
+                        </h1>
+                    </div>
+                    <div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <div class="sendGiftBox p-2 rounded-3 2nd_lunch">
+                                    <h6>Heart 2</h6>
+                                    <img width="80" src="assets/images/gift/1.png" alt="">
+                                    <div class="">
+                                        <span class="gradient5" style="text-align:center;color:#ffffff;border-radius:5px;padding:
+                                                        5px 15px;">
+                                            25 Credits
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="sendGiftBox p-2 rounded-3 2nd_lunch">
+                                    <h6>Heart 2</h6>
+                                    <img width="80" src="assets/images/gift/2.png" alt="">
+                                    <div class="">
+                                        <span class="gradient5" style="text-align:center;color:#ffffff;border-radius:5px;padding:
+                                                        5px 15px;">
+                                            25 Credits
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="sendGiftBox p-2 rounded-3 2nd_lunch">
+                                    <h6>Heart 2</h6>
+                                    <img width="80" src="assets/images/gift/3.png" alt="">
+                                    <div class="">
+                                        <span class="gradient5" style="text-align:center;color:#ffffff;border-radius:5px;padding:
+                                                        5px 15px;">
+                                            25 Credits
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="sendGiftBox p-2 rounded-3 2nd_lunch">
+                                    <h6>Heart 2</h6>
+                                    <img width="80" src="assets/images/gift/4.png" alt="">
+                                    <div class="">
+                                        <span class="gradient5" style="text-align:center;color:#ffffff;border-radius:5px;padding:
+                                                        5px 15px;">
+                                            25 Credits
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="sendGiftBox p-2 rounded-3 2nd_lunch">
+                                    <h6>Heart 2</h6>
+                                    <img width="80" src="assets/images/gift/5.png" alt="">
+                                    <div class="">
+                                        <span class="gradient5" style="text-align:center;color:#ffffff;border-radius:5px;padding:
+                                                        5px 15px;">
+                                            25 Credits
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="sendGiftBox p-2 rounded-3 2nd_lunch">
+                                    <h6>Heart 2</h6>
+                                    <img width="80" src="assets/images/gift/6.png" alt="">
+                                    <div class="">
+                                        <span class="gradient5" style="text-align:center;color:#ffffff;border-radius:5px;padding:
+                                                        5px 15px;">
+                                            25 Credits
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="sendGiftBox p-2 rounded-3 2nd_lunch">
+                                    <h6>Heart 2</h6>
+                                    <img width="80" src="assets/images/gift/7.png" alt="">
+                                    <div class="">
+                                        <span class="gradient5" style="text-align:center;color:#ffffff;border-radius:5px;padding:
+                                                        5px 15px;">
+                                            25 Credits
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Small modal -->
+    <div class="modal fade" id="smallModal" tabindex="-1" aria-labelledby="smallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm swoopInBottom vivify modal-dialog-centered">
+            <div class="modal-content">
+                <div class="d-flex justify-content-end p-2">
+                    <button type="button" class="text-end" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="ri-arrow-down-s-line fs-2 text-black"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="innerSmall-wrap">
+                        <img src="assets/images/gift/3.png" class="vivify popIn delay-300" alt="">
+                        <div class="ovl-promo-label vivify popIn delay-500 gradient18"
+                            style="width: 32px;height: 32px;background: gradient18;border-radius: 50px;text-align: center;padding: 0;margin: 0;border: none">
+                            <b style="color:#fff;;line-height: 32px;" data-gift-price="">50</b>
+                        </div>
+                    </div>
+                    <div class="text-center ">
+                        <div class="btn montserrat gradient5 sendGiftbtn my-3" style="background: gradient5"
+                            id="send-gift-btn"> <span class="btn-txt" style="color: #fff">Send
+                                gift</span> </div>
+                        <p class="">
+                            Service cost: 50 Credits
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------- Search Modal ---------------------------- -->
     <div class="modal fade " id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content modal-bg">
@@ -944,6 +1214,27 @@
             children[13].childNodes[1].innerHTML = $this.value;
         }
     </script>
+
+
+    <script>
+        $(document).on('hide.bs.modal', function (e) {
+            $(e.target).find('.modal-dialog').addClass('swoopOutBottom');
+        });
+
+        $(document).on('hidden.bs.modal', function (e) {
+            $(e.target).find('.modal-dialog').removeClass('swoopOutBottom');
+        });
+
+        $(document).ready(function () {
+            $('#largeModal').on('shown.bs.modal', function () {
+                $('.2nd_lunch').on('click', function () {
+                    $('#smallModal').modal('show');
+                });
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>
