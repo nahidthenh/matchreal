@@ -1583,6 +1583,26 @@ body::-moz-scrollbar-thumb {
     margin-right: 10px;
 }
 
+.bg-blue-500 {
+    background: #4299E1;
+    color: #fff;
+}
+
+.rounded-l-full {
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+}
+
+.rounded-b-full {
+    border-bottom-right-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+}
+
+.rounded-t-full {
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+}
+
 /*
     ///////////////////////////////////// 
  
