@@ -1632,6 +1632,14 @@ body::-moz-scrollbar-thumb {
     opacity: 0;
 }
 
+.messenger-modal-dialog-end {
+    min-height: calc(100% - var(--bs-modal-margin) * 2);
+    width: 100%;
+    float: right;
+    margin-right: 56px;
+    margin-top: 120px;
+}
+
 /*
     ///////////////////////////////////// 
  
