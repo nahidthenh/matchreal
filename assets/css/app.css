@@ -1614,11 +1614,12 @@ body::-moz-scrollbar-thumb {
 }
 
 .receved-message-dp {
-    height: 57px;
+    height: 40px;
     width: 100px;
     background-size: cover;
     background-position: center;
     border-radius: 100px;
+    background-repeat: no-repeat;
 }
 
 .d-flex.items-center.group:hover .message-hover-icon {
