@@ -1621,6 +1621,15 @@ body::-moz-scrollbar-thumb {
     border-radius: 100px;
 }
 
+.d-flex.items-center.group:hover .message-hover-icon {
+    opacity: 1;
+}
+
+.message-hover-icon {
+    margin-top: -10px;
+    opacity: 0;
+}
+
 /*
     ///////////////////////////////////// 
  
