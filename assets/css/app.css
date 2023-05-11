@@ -1588,6 +1588,11 @@ body::-moz-scrollbar-thumb {
     color: #fff;
 }
 
+.bg-gray-100 {
+    background: #E4E6EB;
+    /* color: #010101; */
+}
+
 .rounded-l-full {
     border-top-left-radius: 9999px;
     border-bottom-left-radius: 9999px;
@@ -1601,6 +1606,19 @@ body::-moz-scrollbar-thumb {
 .rounded-t-full {
     border-top-left-radius: 9999px;
     border-top-right-radius: 9999px;
+}
+
+.rounded-r-full {
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+}
+
+.receved-message-dp {
+    height: 57px;
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px;
 }
 
 /*
