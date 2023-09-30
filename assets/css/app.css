@@ -1828,7 +1828,7 @@ body::-moz-scrollbar-thumb {
     border: 1px solid #ededed;
     border-radius: 5px;
     padding: 20px;
-    height: 400px;
+    height: 550px;
 }
 
 .price-plan-header {
@@ -1861,10 +1861,36 @@ body::-moz-scrollbar-thumb {
     text-transform: uppercase;
 }
 
+.price-plan-details ul li i {
+    font-size: 30px;
+    margin-right: 10px;
+}
 
+.price-plan-details ul li {
+    margin-bottom: 20px;
+    font-size: 20px;
+    display: flex;
+}
 
+.new-request {
+    text-align: center;
+    /* background-image: linear-gradient(to right, #db2777, #eab308); */
+    background-image: linear-gradient(to right, var(--mr-theme-primary), var(--mr-pink));
+    display: block;
+    color: var(--mr-white);
+    height: 50px;
+    line-height: 50px;
+    border-radius: 100px;
+    margin-top: 35px;
+}
 
+.text-close {
+    color: #FF3A75;
+}
 
+.text-check {
+    color: #26E4B1;
+}
 
 
 
