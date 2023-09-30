@@ -2,8 +2,8 @@
 
 /*-----------------------------------------------------------------------------------
 
-    Theme Name: Template Name mr Highlights HTML5 Template
-    Author: DeshiSmash
+    Theme Name: Template Name Matchreal HTML5 Template
+    Author: Md. Nahid Hasan
     Support:
     Description:
     Version: 1.0
@@ -93,6 +93,10 @@ h6 {
 ul {
     margin: 0px;
     padding: 0px;
+}
+
+ul li {
+    list-style: none;
 }
 
 p {
@@ -1799,6 +1803,76 @@ body::-moz-scrollbar-thumb {
     font-weight: 500;
     letter-spacing: 2px;
 }
+
+.features-wrap {
+    margin-bottom: 150px;
+}
+
+.product-image img {
+    transition: .3s;
+    cursor: cell;
+}
+
+.product-image img:hover {
+    margin-top: -5px;
+    transition: .3s;
+}
+
+.price-section-title {
+    font-size: 50px !important;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.price-plan-box {
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    padding: 20px;
+    height: 400px;
+}
+
+.price-plan-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.plan-price {
+    display: flex;
+    align-items: center;
+}
+
+.plan__price-count {
+    font-size: 40px;
+    margin-right: 10px;
+    margin-top: 0px;
+    color: var(--mr-black);
+    font-weight: 500;
+}
+
+.plan-type h2 {
+    font-size: 25px;
+}
+
+.plan-type small {
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
