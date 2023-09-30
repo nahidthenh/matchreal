@@ -1877,7 +1877,7 @@ body::-moz-scrollbar-thumb {
     /* background-image: linear-gradient(to right, #db2777, #eab308); */
     background-image: linear-gradient(to right, var(--mr-theme-primary), var(--mr-pink));
     display: block;
-    color: var(--mr-white);
+    color: var(--mr-white) !important;
     height: 50px;
     line-height: 50px;
     border-radius: 100px;
@@ -1908,7 +1908,7 @@ body::-moz-scrollbar-thumb {
 
 .sidebar-menu-pro a {
     background: var(--mr-theme-primary);
-    color: var(--mr-white);
+    color: var(--mr-white) !important;
     display: inline-block;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -1916,14 +1916,99 @@ body::-moz-scrollbar-thumb {
     border-radius: 100px;
 }
 
+.checkout-title i {
+    box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.1);
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 100px;
+    margin-right: 5px;
+    color: var(--mr-theme-primary);
+}
+
+.checkout-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.checkout-title p {
+    margin-bottom: 0;
+    font-size: 15px;
+    margin-left: 6px;
+    color: var(--mr-theme-primary);
+    font-weight: 500;
+}
+
+.checkout-price {
+    margin-bottom: 30px;
+}
+
+.checkout-price span {
+    font-size: 40px;
+    color: #000;
+    margin-right: 6px;
+}
+
+.checkout-price p {
+    font-size: 14px;
+}
+
+.checkout-des {
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 25px;
+}
 
 
 
 
+input[type="radio"] {
+    display: none;
+}
 
+.form-check-label {
+    border: 2px solid #ededed;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    transition: .3s;
+}
 
+.form-check-input:checked+.form-check-label {
+    border: 2px solid #ff0000;
+    transition: .3s;
+    /* Change the color to the desired border color */
+}
 
+.select-price-plan {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.select-price-plan-icon {
+    margin-right: 10px;
+}
+
+.select-price-plan-desc p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.select-price-plan-old-price {
+    font-size: 14px;
+    color: red;
+    font-weight: 600;
+}
+
+.select-price-plan-desc {
+    width: 70%;
+}
 
 
 
