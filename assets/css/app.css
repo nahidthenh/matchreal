@@ -1655,6 +1655,11 @@ body::-moz-scrollbar-thumb {
 
     /////////////////////////////////////  
 */
+
+.no-bg {
+    background-color: #fff !important;
+}
+
 .pro-hero-area {
     text-align: center;
     padding: 100px 0;
@@ -1735,9 +1740,49 @@ body::-moz-scrollbar-thumb {
     color: var(--mr-white) !important;
 }
 
+.pro-inner-widget-content h2 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #0a0c4a;
+}
 
+.pro-inner-widget-content small {
+    margin-bottom: 5px;
+    color: var(--mr-pink);
+    font-size: 18px;
+    font-weight: 500;
+}
 
+.pro-inner-widget-content a {
+    background-color: var(--mr-theme-primary);
+    display: inline-block;
+    border: 1px solid var(--mr-theme-primary);
+    border-radius: 100px;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    color: var(--mr-white) !important;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
 
+.pro-inner-widget-content p {
+    color: #3c3c3c;
+    line-height: 28px;
+    margin-bottom: 25px;
+    text-transform: lowercase;
+}
+
+.pro-step-widget-one {
+    background-image: linear-gradient(to bottom, #fff, rgb(0, 102, 204, 10%), #fff);
+}
+
+.pro-inner-single-widget {
+    margin-bottom: 150px;
+}
 
 
 
