@@ -27,12 +27,15 @@ allCards.forEach(function (el) {
     });
 
     hammertime.on('pan', function (event) {
+        // return;
+        // console.table(event);
+        // console.table(event.center.x + " " + event.center.y);
         if (event.deltaX === 0) return;
         if (event.center.x === 0 && event.center.y === 0) return;
-
-        tinderContainer.classList.toggle('tinder_love', event.deltaX > 0);
-        tinderContainer.classList.toggle('tinder_nope', event.deltaX < 0);
-
+        if (event.distance > 150) {
+            tinderContainer.classList.toggle('tinder_love', event.deltaX > 0);
+            tinderContainer.classList.toggle('tinder_nope', event.deltaX < 0);
+        }
         var xMulti = event.deltaX * 0.03;
         var yMulti = event.deltaY / 80;
         var rotate = xMulti * yMulti;
@@ -41,6 +44,11 @@ allCards.forEach(function (el) {
     });
 
     hammertime.on('panend', function (event) {
+        if (event.distance < 150) {
+            event.target.style.transform = '';
+            event.target.classList.remove('removed');
+            return;
+        }
         el.classList.remove('moving');
         tinderContainer.classList.remove('tinder_love');
         tinderContainer.classList.remove('tinder_nope');
