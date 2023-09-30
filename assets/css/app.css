@@ -1647,3 +1647,110 @@ body::-moz-scrollbar-thumb {
 
     /////////////////////////////////////  
 */
+
+/*
+    ///////////////////////////////////// 
+ 
+    Prolanding and small widget css Start
+
+    /////////////////////////////////////  
+*/
+.pro-hero-area {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.pro-hero-area h2 {
+    font-size: 60px;
+    font-weight: 800;
+    background: linear-gradient(45deg, var(--mr-theme-primary), var(--mr-pink));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 15px;
+}
+
+.pro-hero-area small {
+    display: block;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.pro-hero-area small:before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 25px;
+    width: 40%;
+    height: 2px;
+    background: #d2d2d2;
+    border-radius: 5px;
+}
+
+.pro-hero-area small:after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 25px;
+    width: 40%;
+    height: 2px;
+    background: #d2d2d2;
+    border-radius: 5px;
+}
+
+.pro-hero-area h1 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.pro-hero-btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.hero-watch-video-btn {
+    border: 1px solid;
+    width: 250px;
+    height: 60px;
+    border-radius: 100px;
+    margin-right: 15px;
+}
+
+
+.join-singlerr-pro-btn {
+    background-color: var(--mr-theme-primary);
+    display: inline-block;
+    border: 1px solid var(--mr-theme-primary);
+    border-radius: 100px;
+    margin-right: 15px;
+    width: 250px;
+    height: 60px;
+    line-height: 60px;
+    color: var(--mr-white) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    ///////////////////////////////////// 
+ 
+    Prolanding and small widget css End
+
+    /////////////////////////////////////  
+*/
