@@ -9,6 +9,7 @@
     <title>Welcome To Matchreal</title>
 
     <!-- ==== css ==== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/slick.css">
@@ -260,7 +261,7 @@
                         <small> and gain access to </small>
                         <h1>Premium Content, Tools, and Courses</h1>
                         <div class="pro-hero-btn-group">
-                            <button type="button" class="hero-watch-video-btn">
+                            <button type="button" class="hero-watch-video-btn" data-fancybox="">
                                 <i class="ri-play-circle-line"></i>
                                 Watch video
                             </button>
@@ -596,70 +597,20 @@
     <!-- ====================================== Referrals Modal End ====================================== -->
     <!-- ==== Script File ==== -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/app.js"></script>
+
     <script>
-        $(document).ready(function () {
-            $('.innerItemSlider').slick({
-                infinite: false,
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                prevArrow: `<button type='button' class='slick-prev pull-left sl'>
-                        <i class="ri-arrow-left-s-line"></i>
-                    </button>`,
-                nextArrow: `<button type='button' class='slick-next pull-right sr'>
-                        <i class="ri-arrow-right-s-line"></i>
-                    </button>`
-            });
+        // Single video
+        Fancybox.bind("[data-fancybox]", {
+            src: "https://www.youtube.com/watch?v=z2X2HaTvkl8",
+            type: "video",
+            ratio: 16 / 10,
+            width: 640,
+            height: 360,
         });
-    </script>
-    <script>
-        $(function () {
-            $("#ageMini").val(13);
-            $("#ageMax").val(50);
-            ageMiniCal();
-            ageMaxCal();
-
-            $(".selectMe2").each(function () {
-                $(this).select2({
-                    width: '100%',
-                    placeholder: $(this).data('place_holder')
-                });
-            });
-        });
-
-        function ageMiniCal() {
-            $this = document.getElementById("ageMini");
-
-            $this.value = Math.min($this.value, $this.parentNode.childNodes[5].value - 1);
-
-            var value = (100 / (parseInt($this.max) - parseInt($this.min))) * parseInt($this.value) - (100 / (
-                parseInt($this.max) - parseInt($this.min))) * parseInt($this.min);
-
-            var children = $this.parentNode.childNodes[1].childNodes;
-
-            children[1].style.width = value + '%';
-            children[5].style.left = value + '%';
-            children[7].style.left = value + '%';
-            children[11].style.left = value + '%';
-            children[11].childNodes[1].innerHTML = $this.value;
-        }
-
-        function ageMaxCal() {
-            $this = document.getElementById("ageMax");
-            $this.value = Math.max($this.value, $this.parentNode.childNodes[3].value - (-1));
-
-            var value = (100 / (parseInt($this.max) - parseInt($this.min))) * parseInt($this.value) - (100 / (
-                parseInt($this.max) - parseInt($this.min))) * parseInt($this.min);
-
-            var children = $this.parentNode.childNodes[1].childNodes;
-            children[3].style.width = (100 - value) + '%';
-            children[5].style.right = (100 - value) + '%';
-            children[9].style.left = value + '%';
-            children[13].style.left = value + '%';
-            children[13].childNodes[1].innerHTML = $this.value;
-        }
     </script>
 </body>
 
