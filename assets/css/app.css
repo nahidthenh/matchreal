@@ -1893,7 +1893,28 @@ body::-moz-scrollbar-thumb {
 }
 
 
+.sidebar-menu-pro {
+    background: #262626;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 7px;
+}
 
+.sidebar-menu-pro img {
+    margin-top: -35px;
+}
+
+.sidebar-menu-pro a {
+    background: var(--mr-theme-primary);
+    color: var(--mr-white);
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 6px 20px;
+    border-radius: 100px;
+}
 
 
 
