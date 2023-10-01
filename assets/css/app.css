@@ -1976,12 +1976,16 @@ input[type="radio"] {
     margin-bottom: 25px;
     cursor: pointer;
     transition: .3s;
+    position: relative;
+}
+
+.form-check {
+    padding-left: 0 !important;
 }
 
 .form-check-input:checked+.form-check-label {
-    border: 2px solid #ff0000;
+    border: 2px solid var(--mr-pink);
     transition: .3s;
-    /* Change the color to the desired border color */
 }
 
 .select-price-plan {
@@ -2002,7 +2006,7 @@ input[type="radio"] {
 
 .select-price-plan-old-price {
     font-size: 14px;
-    color: red;
+    color: var(--mr-pink);
     font-weight: 600;
 }
 
@@ -2010,7 +2014,33 @@ input[type="radio"] {
     width: 70%;
 }
 
+.price-plan-price {
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    background: var(--mr-pink);
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+}
 
+.price-plan-price p {
+    color: var(--mr-white) !important;
+    margin: 0;
+}
+
+.upgrade-to-pro-btn {
+    background-image: linear-gradient(to right, var(--mr-theme-primary), var(--mr-pink));
+    width: 100%;
+    border-radius: 5px;
+    height: 50px;
+    color: #fff;
+}
 
 /*
     ///////////////////////////////////// 
