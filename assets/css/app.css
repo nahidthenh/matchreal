@@ -2039,8 +2039,49 @@ input[type="radio"] {
     width: 100%;
     border-radius: 5px;
     height: 50px;
-    color: #fff;
+    color: var(--mr-white);
 }
+
+.my-plan-item {
+    display: flex;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    padding: 15px;
+    align-items: center;
+    position: relative;
+    min-height: 130px;
+}
+
+.my-plan-icon {
+    margin-right: 15px;
+}
+
+.my-plan-text p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+.your-current-plan {
+    position: absolute;
+    background: var(--mr-pink);
+    bottom: 0;
+    right: 0;
+    height: 30px;
+    font-size: 14px;
+    width: 140px;
+    text-align: center;
+    border-radius: 10px 0;
+    color: var(--mr-white);
+}
+
+.my-plan-text p a {
+    color: var(--mr-blue);
+}
+
+
+
 
 /*
     ///////////////////////////////////// 
